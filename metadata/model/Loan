@@ -1,0 +1,304 @@
+{
+    "id": "ExtBox1-ext-gen37100",
+    "type": "datamodel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Loan"
+    },
+    "customConfigs": [],
+    "designerId": "4ee53f7d-5b84-48c9-b03d-d95a3dbae233",
+    "$viewOrder": 0,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen37306",
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id",
+                "type": "int",
+                "designer|userClassName": "MyField"
+            },
+            "customConfigs": []
+        },
+        {
+            "id": "ExtBox1-ext-gen37420",
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "name",
+                "type": "string",
+                "designer|userClassName": "MyField1"
+            },
+            "customConfigs": []
+        },
+        {
+            "id": "ExtBox1-ext-gen37531",
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "status",
+                "type": "string",
+                "designer|userClassName": "MyField2"
+            },
+            "customConfigs": []
+        },
+        {
+            "id": "ExtBox1-ext-gen37645",
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "loan_amount",
+                "type": "int",
+                "designer|userClassName": "MyField3"
+            },
+            "customConfigs": []
+        },
+        {
+            "id": "ExtBox1-ext-gen37762",
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "funded_amount",
+                "type": "int",
+                "designer|userClassName": "MyField4"
+            },
+            "customConfigs": []
+        },
+        {
+            "id": "ExtBox1-ext-gen37884",
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "basket_amount",
+                "type": "int",
+                "designer|userClassName": "MyField5"
+            },
+            "customConfigs": []
+        },
+        {
+            "id": "ExtBox1-ext-gen38010",
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "borrower_count",
+                "type": "int",
+                "designer|userClassName": "MyField6"
+            },
+            "customConfigs": []
+        },
+        {
+            "id": "ExtBox1-ext-gen38139",
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "activity",
+                "type": "string",
+                "designer|userClassName": "MyField7"
+            },
+            "customConfigs": []
+        },
+        {
+            "id": "ExtBox1-ext-gen38271",
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "sector",
+                "type": "string",
+                "designer|userClassName": "MyField8"
+            },
+            "customConfigs": []
+        },
+        {
+            "id": "ExtBox1-ext-gen38407",
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "use",
+                "type": "string",
+                "designer|userClassName": "MyField9"
+            },
+            "customConfigs": []
+        },
+        {
+            "id": "ExtBox1-ext-gen38545",
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "partner_id",
+                "type": "int",
+                "designer|userClassName": "MyField10"
+            },
+            "customConfigs": []
+        },
+        {
+            "id": "ExtBox1-ext-gen38686",
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "mapping": "description.texts.en",
+                "name": "description",
+                "type": "string",
+                "designer|userClassName": "MyField11"
+            },
+            "customConfigs": []
+        },
+        {
+            "id": "ExtBox1-ext-gen40848",
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "mapping": "image.id",
+                "name": "image",
+                "type": "string",
+                "designer|userClassName": "MyField12"
+            },
+            "customConfigs": [],
+            "cn": [
+                {
+                    "id": "ExtBox1-ext-gen41311",
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "convert",
+                        "designer|params": [
+                            "v",
+                            "rec"
+                        ],
+                        "implHandler": [
+                            "return \"http://kiva.org/img/w80h80/\" + v + \".jpg\";"
+                        ],
+                        "designer|userClassName": "convert"
+                    },
+                    "customConfigs": [],
+                    "iconCls": "icon-basic-function"
+                }
+            ]
+        },
+        {
+            "id": "ExtBox1-ext-gen40995",
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "percent_funded",
+                "designer|userClassName": "MyField13"
+            },
+            "customConfigs": [],
+            "cn": [
+                {
+                    "id": "ExtBox1-ext-gen41819",
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "convert",
+                        "designer|params": [
+                            "v",
+                            "rec"
+                        ],
+                        "implHandler": [
+                            "return parseInt(rec.data.funded_amount / rec.data.loan_amount * 100, 10);"
+                        ],
+                        "designer|userClassName": "convert"
+                    },
+                    "customConfigs": [],
+                    "iconCls": "icon-basic-function"
+                }
+            ]
+        },
+        {
+            "id": "ExtBox1-ext-gen7902",
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "terms",
+                "designer|userClassName": "MyField14"
+            },
+            "customConfigs": []
+        },
+        {
+            "id": "ExtBox1-ext-gen8058",
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "location",
+                "designer|userClassName": "MyField15"
+            },
+            "customConfigs": []
+        }
+    ]
+}

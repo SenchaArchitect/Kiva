@@ -1,0 +1,13 @@
+{
+    "id": "ExtBox1-ext-gen1949",
+    "type": "googlemapsjsresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {},
+    "customConfigs": [],
+    "designerId": "14a64ebf-1e18-43dc-98d3-03354d2eb9a6",
+    "$viewOrder": 3
+}

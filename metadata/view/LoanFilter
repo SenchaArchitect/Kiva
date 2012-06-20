@@ -1,0 +1,199 @@
+{
+    "id": "ExtBox1-ext-gen15006",
+    "type": "container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "LoanFilter",
+        "designer|userAlias": "loanfilter"
+    },
+    "customConfigs": [],
+    "designerId": "db753b0c-c712-4149-bb62-862860e75414",
+    "$viewOrder": 4,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen15276",
+            "type": "toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "top",
+                "ui": "green",
+                "title": "Kiva",
+                "designer|userClassName": "MyToolbar"
+            },
+            "customConfigs": [],
+            "cn": [
+                {
+                    "id": "ExtBox1-ext-gen18250",
+                    "type": "spacer",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MySpacer"
+                    },
+                    "customConfigs": []
+                },
+                {
+                    "id": "ExtBox1-ext-gen16857",
+                    "type": "button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "iconCls": "refresh",
+                        "iconMask": true,
+                        "text": null,
+                        "designer|userClassName": "MyButton1"
+                    },
+                    "customConfigs": []
+                }
+            ]
+        },
+        {
+            "id": "ExtBox1-ext-gen15449",
+            "type": "toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "top",
+                "ui": "gray",
+                "designer|userClassName": "MyToolbar1"
+            },
+            "customConfigs": [],
+            "cn": [
+                {
+                    "id": "ExtBox1-ext-gen18918",
+                    "type": "selectfield",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": null,
+                        "name": "gender",
+                        "options": "[\n{text:'Both', value:'both'}, \n{text:'Male',\nvalue:'male'},\n{text:'Female',\nvalue:'female'}\n]\n",
+                        "designer|userClassName": "MySelectField"
+                    },
+                    "customConfigs": []
+                },
+                {
+                    "id": "ExtBox1-ext-gen19354",
+                    "type": "selectfield",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": null,
+                        "name": "sector",
+                        "options": "[\n                            {text: 'All',            value: ''},\n                            {text: 'Agriculture',    value: 'agriculture'},\n                            {text: 'Transportation', value: 'transportation'},\n                            {text: 'Services',       value: 'services'},\n                            {text: 'Clothing',       value: 'clothing'},\n                            {text: 'Health',         value: 'health'},\n                            {text: 'Retail',         value: 'retail'},\n                            {text: 'Manufacturing',  value: 'manufacturing'},\n                            {text: 'Arts',           value: 'arts'},\n                            {text: 'Housing',        value: 'housing'},\n                            {text: 'Food',           value: 'food'},\n                            {text: 'Wholesale',      value: 'wholesale'},\n                            {text: 'Construction',   value: 'construction'},\n                            {text: 'Education',      value: 'education'},\n                            {text: 'Personal Use',   value: 'personal'},\n                            {text: 'Entertainment',  value: 'entertainment'},\n                            {text: 'Green',          value: 'green'}\n                        ]",
+                        "designer|userClassName": "MySelectField1"
+                    },
+                    "customConfigs": []
+                },
+                {
+                    "id": "ExtBox1-ext-gen19671",
+                    "type": "selectfield",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": null,
+                        "name": "sort_by",
+                        "options": " [\n                            {text: 'Newest',           value: 'newest'},\n                            {text: 'Oldest',           value: 'oldest'},\n                            {text: 'Expiring',         value: 'expiration'},\n                            {text: 'Amount Remaining', value: 'amount_remaining'},\n                            {text: 'Popularity',       value: 'popularity'},\n                            {text: 'Loan Amount',      value: 'loan_amount'}\n                        ]",
+                        "designer|userClassName": "MySelectField2"
+                    },
+                    "customConfigs": []
+                },
+                {
+                    "id": "ExtBox1-ext-gen20026",
+                    "type": "spacer",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MySpacer1"
+                    },
+                    "customConfigs": []
+                },
+                {
+                    "id": "ExtBox1-ext-gen20176",
+                    "type": "searchfield",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": null,
+                        "designer|userClassName": "MySearchField"
+                    },
+                    "customConfigs": []
+                }
+            ]
+        },
+        {
+            "id": "ExtBox1-ext-gen20501",
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onFieldChange",
+                "designer|params": [
+                    "comp, value"
+                ],
+                "implHandler": [
+                    "this.fireAction('filter', this.getValues(), this);"
+                ],
+                "designer|userClassName": "onFieldChange"
+            },
+            "customConfigs": []
+        },
+        {
+            "id": "ExtBox1-ext-gen20985",
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onContainerInitialize",
+                "implHandler": [
+                    "if (Ext.os.deviceType === 'Phone'){",
+                    "    this.setItems([",
+                    "    { xtype: 'searchfield', flex: 1 }",
+                    "    ]);",
+                    "}"
+                ],
+                "name": "initialize",
+                "designer|userClassName": "onContainerInitialize"
+            },
+            "customConfigs": []
+        }
+    ]
+}
