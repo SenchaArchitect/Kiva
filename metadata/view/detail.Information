@@ -1,0 +1,49 @@
+{
+    "id": "ExtBox1-ext-gen3674",
+    "type": "container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "cls": [
+            "detail-card"
+        ],
+        "styleHtmlContent": true,
+        "scrollable": "vertical",
+        "designer|userClassName": "detail.Information",
+        "designer|userAlias": "detailInformation"
+    },
+    "customConfigs": [],
+    "designerId": "513759c1-12e2-4a8a-b5b8-6051975b79d7",
+    "$viewOrder": 0,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen2697",
+            "type": "template",
+            "reference": {
+                "name": "tpl",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "implHandler": [
+                    "<h1>{name}</h1>",
+                    "<h2><tpl if=\"location.town\">{location.town} </tpl>{location.country}</h2>",
+                    "<p class=\"overview\">",
+                    "<strong>Activity:</strong> {activity}<br />",
+                    "<strong>Sector:</strong> {sector}<br />",
+                    "<strong>Amount requested:</strong> ${terms.loan_amount}<br />",
+                    "<strong>Amount funded:</strong> ${funded_amount}<br />",
+                    "</p>",
+                    "<p><strong>Overview</strong><br />{description}</p>",
+                    ""
+                ],
+                "designer|displayName": "tpl",
+                "designer|userClassName": "tpl"
+            },
+            "customConfigs": []
+        }
+    ]
+}

@@ -1,0 +1,74 @@
+{
+    "id": "ExtBox1-ext-gen22945",
+    "type": "dataview",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "ui": "loans",
+        "defaultType": "loanslistitem",
+        "layout": null,
+        "store": "Loans",
+        "useComponents": true,
+        "designer|userClassName": "LoansList",
+        "designer|userAlias": "loanslist"
+    },
+    "customConfigs": [],
+    "designerId": "40c12b1f-2659-4c24-bad6-6672d4d0b90b",
+    "$viewOrder": 5,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen23477",
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onDataviewInitialize",
+                "implHandler": [
+                    "this.refreshed = false;",
+                    "",
+                    "Ext.require('Kiva.view.LoansListItem'); // TODO : check back to see if this works",
+                    " "
+                ],
+                "name": "initialize",
+                "designer|userClassName": "onDataviewInitialize"
+            },
+            "customConfigs": []
+        },
+        {
+            "id": "ExtBox1-ext-gen24228",
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onLoad",
+                "implHandler": [
+                    "var me = this,",
+                    "    store = me.getStore();",
+                    "",
+                    "me.callParent(arguments);",
+                    "",
+                    "if (store.getCount() === 0 && store.isLoaded()) {",
+                    "    me.setMasked({",
+                    "        xtype: 'loadmask',",
+                    "        indicator: false,",
+                    "        message: 'Sorry, KIVA is having issues right now.'",
+                    "    });",
+                    "",
+                    "    me.getScrollable().getScroller().setDisabled(true);",
+                    "}"
+                ],
+                "designer|userClassName": "onLoad"
+            },
+            "customConfigs": []
+        }
+    ]
+}

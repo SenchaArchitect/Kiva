@@ -1,0 +1,41 @@
+{
+    "id": "ExtBox1-ext-gen2211",
+    "type": "application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "requires": [
+            "Ext.data.proxy.Kiva"
+        ],
+        "models": [
+            "Loan"
+        ],
+        "stores": [
+            "Loans"
+        ],
+        "views": [
+            "detail.Information",
+            "detail.Map",
+            "detail.Schedule",
+            "Detail",
+            "LoanFilter",
+            "LoanList",
+            "LoansListItem",
+            "LoansListItemCompletion",
+            "Main"
+        ],
+        "name": "Kiva",
+        "phoneStartupScreen": "resources/loading/Homescreen.jpg",
+        "tabletStartupScreen": "resources/loading/Homescreen~ipad.jpg",
+        "controllers": [
+            "Loans"
+        ]
+    },
+    "customConfigs": [],
+    "designerId": "application",
+    "$viewOrder": 0,
+    "iconCls": "icon-application"
+}

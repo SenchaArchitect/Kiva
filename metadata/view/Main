@@ -1,0 +1,52 @@
+{
+    "id": "ExtBox1-ext-gen34349",
+    "type": "container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|initialView": true,
+        "layout": "fit",
+        "designer|userClassName": "Main",
+        "designer|userAlias": "mainview"
+    },
+    "customConfigs": [],
+    "designerId": "2f116102-9fd6-4bfc-8755-92a2de790577",
+    "$viewOrder": 8,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen34716",
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "loanfilter",
+                "docked": "top"
+            },
+            "customConfigs": [],
+            "iconCls": "icon-linkedinstance",
+            "masterInstanceId": "ExtBox1-ext-gen15006"
+        },
+        {
+            "id": "ExtBox1-ext-gen35468",
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "loanlist",
+                "layout": null
+            },
+            "customConfigs": [],
+            "iconCls": "icon-linkedinstance",
+            "masterInstanceId": "ExtBox1-ext-gen22945"
+        }
+    ]
+}
