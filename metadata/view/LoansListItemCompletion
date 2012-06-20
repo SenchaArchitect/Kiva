@@ -1,0 +1,50 @@
+{
+    "id": "ExtBox1-ext-gen33061",
+    "type": "component",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "cls": [
+            "completion"
+        ],
+        "width": 100,
+        "designer|userClassName": "LoansListItemCompletion",
+        "percentFunded": 0
+    },
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "percentFunded",
+            "type": "string"
+        }
+    ],
+    "designerId": "28654942-e312-4b8d-ab80-5e12c88f0cc7",
+    "$viewOrder": 7,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen33335",
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "updatePercentFunded",
+                "designer|params": [
+                    "percentFunded"
+                ],
+                "implHandler": [
+                    "var html = '<div class=\"bar\" style=\"width:' + percentFunded + '%\"></div>';",
+                    "",
+                    "this.updateHtml(html);"
+                ],
+                "designer|userClassName": "updatePercentFunded"
+            },
+            "customConfigs": []
+        }
+    ]
+}

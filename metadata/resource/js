@@ -1,0 +1,15 @@
+{
+    "id": "ExtBox1-ext-gen13110",
+    "type": "jsresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "url": "lib/KivaProxy.js"
+    },
+    "customConfigs": [],
+    "designerId": "ed24e683-53fa-4b1e-9331-c8009d9ab838",
+    "$viewOrder": 1
+}

@@ -1,0 +1,77 @@
+{
+    "id": "ExtBox1-ext-gen22945",
+    "type": "dataview",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "ui": "loans",
+        "defaultType": "loanslistitem",
+        "layout": null,
+        "deselectOnContainerClick": false,
+        "store": "Loans",
+        "useComponents": true,
+        "designer|userClassName": "LoanList",
+        "designer|userAlias": "loanlist"
+    },
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "refreshed",
+            "type": "object"
+        }
+    ],
+    "designerId": "40c12b1f-2659-4c24-bad6-6672d4d0b90b",
+    "$viewOrder": 5,
+    "cn": [
+        {
+            "id": "ExtBox1-ext-gen24228",
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onLoad",
+                "implHandler": [
+                    "var me = this,",
+                    "    store = me.getStore();",
+                    "",
+                    "me.callParent(arguments);",
+                    "",
+                    "if (store.getCount() === 0 && store.isLoaded()) {",
+                    "    me.setMasked({",
+                    "        xtype: 'loadmask',",
+                    "        indicator: false,",
+                    "        message: 'Sorry, KIVA is having issues right now.'",
+                    "    });",
+                    "",
+                    "    me.getScrollable().getScroller().setDisabled(true);",
+                    "}"
+                ],
+                "designer|userClassName": "onLoad"
+            },
+            "customConfigs": []
+        },
+        {
+            "id": "ExtBox1-ext-gen6387",
+            "type": "object",
+            "reference": {
+                "name": "refreshed",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "implHandler": [
+                    "false"
+                ],
+                "designer|displayName": "refreshed",
+                "designer|userClassName": "refreshed"
+            },
+            "customConfigs": []
+        }
+    ]
+}
