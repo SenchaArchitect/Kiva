@@ -53,6 +53,7 @@ Ext.define('Kiva.view.Detail', {
             },
             {
                 xtype: 'button',
+                id: 'lendButton',
                 text: 'Lend $25'
             }
         ],
@@ -112,18 +113,27 @@ Ext.define('Kiva.view.Detail', {
     },
 
     updateLendButton: function() {
-        var url    = "http://www.kiva.org/lend/" + this.getLoan().getId(),
-            button = this.down('button'),
-            link = Ext.getDom('linker'),
-            clickEvent = document.createEvent('Event');
 
-        //http://www.sencha.com/forum/showthread.php?130358-window.open()-from-toolbar-button-opens-window-from-list-item-a-new-tab&p=639938#post639938
+        var url    = "http://www.kiva.org/lend/" + this.getLoan().getId(),
+            button = this.down('button');
+        button.on('tap', function(){
+            window.open(url);
+        });
+
+        /*
+
+        link = Ext.getDom('linker'),
+        clickEvent = document.createEvent('Event');
+
+
+        http://www.sencha.com/forum/showthread.php?130358-window.open()-from-toolbar-button-opens-window-from-list-item-a-new-tab&p=639938#post639938
+
         clickEvent.initEvent('click', true, false);
 
         button.setHandler(function() {
-            link.href = url;
-            link.dispatchEvent(clickEvent);
-        });
+        link.href = url;
+        link.dispatchEvent(clickEvent);
+        });*/
     }
 
 });

@@ -93,6 +93,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "id": "lendButton",
                 "text": "Lend $25",
                 "designer|userClassName": "MyButton"
             },
@@ -184,18 +185,27 @@
             "userConfig": {
                 "fn": "updateLendButton",
                 "implHandler": [
+                    "",
                     "var url    = \"http://www.kiva.org/lend/\" + this.getLoan().getId(),",
-                    "    button = this.down('button'),",
+                    "    button = this.down('button');",
+                    "button.on('tap', function(){",
+                    "    window.open(url);",
+                    "});",
+                    "",
+                    "/*",
+                    "    ",
                     "    link = Ext.getDom('linker'),",
                     "    clickEvent = document.createEvent('Event');",
                     "",
-                    "//http://www.sencha.com/forum/showthread.php?130358-window.open()-from-toolbar-button-opens-window-from-list-item-a-new-tab&p=639938#post639938",
+                    "",
+                    "http://www.sencha.com/forum/showthread.php?130358-window.open()-from-toolbar-button-opens-window-from-list-item-a-new-tab&p=639938#post639938",
+                    "",
                     "clickEvent.initEvent('click', true, false);",
                     "",
                     "button.setHandler(function() {",
                     "    link.href = url;",
                     "    link.dispatchEvent(clickEvent);",
-                    "});"
+                    "});*/"
                 ],
                 "designer|userClassName": "updateLendButton"
             },
