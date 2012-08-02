@@ -34,14 +34,12 @@ Ext.application({
         'detail.Schedule',
         'Detail',
         'LoanFilter',
-        'LoanList',
+        'LoansList',
         'LoansListItem',
         'LoansListItemCompletion',
         'Main'
     ],
     name: 'Kiva',
-    phoneStartupScreen: 'resources/loading/Homescreen.jpg',
-    tabletStartupScreen: 'resources/loading/Homescreen~ipad.jpg',
     controllers: [
         'Loans'
     ],

@@ -17,8 +17,6 @@ Ext.define('Kiva.controller.Loans', {
     extend: 'Ext.app.Controller',
 
     config: {
-        profile: Ext.os.deviceType.toLowerCase(),
-
         refs: {
             main: 'mainview',
             loansList: 'loanlist',
@@ -46,11 +44,7 @@ Ext.define('Kiva.controller.Loans', {
         }
     },
 
-    onListTap: function(dataview, record, options) {
-        var list = dataview;
-        var loan = record;
-
-
+    onListTap: function(list, loan, options) {
         if (!this.view) {
             this.view = Ext.create('Kiva.view.Detail');
         }

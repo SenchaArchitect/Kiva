@@ -1,5 +1,4 @@
 {
-    "id": "ExtBox1-ext-gen9316",
     "type": "panel",
     "reference": {
         "name": "items",
@@ -7,30 +6,51 @@
     },
     "codeClass": null,
     "userConfig": {
+        "loan": [
+            "{}"
+        ],
+        "designer|userClassName": "Detail",
+        "designer|userAlias": "detail",
         "bottom": 0,
-        "cls": null,
         "right": 0,
         "top": 0,
         "ui": "detail",
         "width": 400,
         "hideOnMaskTap": true,
         "layout": "vbox",
-        "modal": true,
-        "designer|userClassName": "Detail",
-        "designer|userAlias": "detail"
+        "modal": true
     },
+    "configAlternates": {
+        "loan": "object"
+    },
+    "id": "ExtBox1-ext-gen9316",
+    "designerId": "502e7c24-8ce7-4387-8bd0-7c7b3aeeeedc",
     "customConfigs": [
         {
             "group": "(Custom Properties)",
             "name": "loan",
-            "type": "object"
+            "type": "string"
         }
     ],
-    "designerId": "502e7c24-8ce7-4387-8bd0-7c7b3aeeeedc",
-    "$viewOrder": 3,
     "cn": [
         {
-            "id": "ExtBox1-ext-gen10184",
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onPanelInitialize",
+                "fn": "onPanelInitialize",
+                "implHandler": [
+                    "this.setBaseCls(Ext.baseCSSPrefix + 'sheet');"
+                ],
+                "name": "initialize"
+            },
+            "designerId": "276aca71-4647-4603-a4a1-27c8077f90ce"
+        },
+        {
             "type": "carousel",
             "reference": {
                 "name": "items",
@@ -38,54 +58,44 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyCarousel",
-                "layout|flex": 1
+                "layout|flex": 1,
+                "designer|userClassName": "MyCarousel"
             },
-            "customConfigs": [],
+            "designerId": "85e59ef6-6562-43e0-b41a-bf8844d7191b",
             "cn": [
                 {
-                    "id": "ExtBox1-ext-gen10460",
                     "type": "linkedinstance",
                     "reference": {
                         "name": "items",
                         "type": "array"
                     },
                     "codeClass": null,
-                    "userConfig": {},
-                    "customConfigs": [],
-                    "iconCls": "icon-linkedinstance",
+                    "designerId": "7454f94d-49f7-4068-a42a-fbd0287f90e2",
                     "masterInstanceId": "ExtBox1-ext-gen3674"
                 },
                 {
-                    "id": "ExtBox1-ext-gen11107",
                     "type": "linkedinstance",
                     "reference": {
                         "name": "items",
                         "type": "array"
                     },
                     "codeClass": null,
-                    "userConfig": {},
-                    "customConfigs": [],
-                    "iconCls": "icon-linkedinstance",
+                    "designerId": "7c2895ae-7360-4da7-aa05-1ea0a1efc8a8",
                     "masterInstanceId": "ExtBox1-ext-gen8104"
                 },
                 {
-                    "id": "ExtBox1-ext-gen11767",
                     "type": "linkedinstance",
                     "reference": {
                         "name": "items",
                         "type": "array"
                     },
                     "codeClass": null,
-                    "userConfig": {},
-                    "customConfigs": [],
-                    "iconCls": "icon-linkedinstance",
+                    "designerId": "ca008aff-24e4-4114-abb1-c2ab76661879",
                     "masterInstanceId": "ExtBox1-ext-gen5512"
                 }
             ]
         },
         {
-            "id": "ExtBox1-ext-gen12876",
             "type": "button",
             "reference": {
                 "name": "items",
@@ -93,14 +103,13 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "MyButton",
                 "id": "lendButton",
-                "text": "Lend $25",
-                "designer|userClassName": "MyButton"
+                "text": "Lend $25"
             },
-            "customConfigs": []
+            "designerId": "0d83ac5c-272a-496b-8ab0-fd49cb937cbd"
         },
         {
-            "id": "ExtBox1-ext-gen13209",
             "type": "basicfunction",
             "reference": {
                 "name": "items",
@@ -108,6 +117,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "hide",
                 "fn": "hide",
                 "designer|params": [
                     "animation"
@@ -122,13 +132,11 @@
                     "//show the mask again",
                     "me.callParent();",
                     ""
-                ],
-                "designer|userClassName": "hide"
+                ]
             },
-            "customConfigs": []
+            "designerId": "56b6e33e-54ae-4733-87b4-56dc1ab657ae"
         },
         {
-            "id": "ExtBox1-ext-gen13725",
             "type": "basicfunction",
             "reference": {
                 "name": "items",
@@ -136,6 +144,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "updateLoan",
                 "fn": "updateLoan",
                 "designer|params": [
                     "newLoan"
@@ -169,13 +178,11 @@
                     "carousel.setActiveItem(0);",
                     "",
                     "map.setMapCenter(this.mapMarker.position);"
-                ],
-                "designer|userClassName": "updateLoan"
+                ]
             },
-            "customConfigs": []
+            "designerId": "c5837780-1848-4212-b49b-016e5de7cb8d"
         },
         {
-            "id": "ExtBox1-ext-gen14339",
             "type": "basicfunction",
             "reference": {
                 "name": "items",
@@ -183,6 +190,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "updateLendButton",
                 "fn": "updateLendButton",
                 "implHandler": [
                     "",
@@ -206,45 +214,9 @@
                     "    link.href = url;",
                     "    link.dispatchEvent(clickEvent);",
                     "});*/"
-                ],
-                "designer|userClassName": "updateLendButton"
+                ]
             },
-            "customConfigs": []
-        },
-        {
-            "id": "ExtBox1-ext-gen3453",
-            "type": "object",
-            "reference": {
-                "name": "loan",
-                "type": "object"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "implHandler": [
-                    "null"
-                ],
-                "designer|displayName": "loan",
-                "designer|userClassName": "loan"
-            },
-            "customConfigs": []
-        },
-        {
-            "id": "ExtBox1-ext-gen9439",
-            "type": "basiceventbinding",
-            "reference": {
-                "name": "listeners",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "fn": "onPanelInitialize",
-                "implHandler": [
-                    "this.setBaseCls(Ext.baseCSSPrefix + 'sheet');"
-                ],
-                "name": "initialize",
-                "designer|userClassName": "onPanelInitialize"
-            },
-            "customConfigs": []
+            "designerId": "25d3a9da-80f5-4169-89b3-b6ca0f63b8eb"
         }
     ]
 }

@@ -1,5 +1,4 @@
 {
-    "id": "ExtBox1-ext-gen3674",
     "type": "container",
     "reference": {
         "name": "items",
@@ -7,20 +6,18 @@
     },
     "codeClass": null,
     "userConfig": {
+        "designer|userClassName": "detail.Information",
+        "designer|userAlias": "detailInformation",
         "cls": [
             "detail-card"
         ],
         "styleHtmlContent": true,
-        "scrollable": "vertical",
-        "designer|userClassName": "detail.Information",
-        "designer|userAlias": "detailInformation"
+        "scrollable": "vertical"
     },
-    "customConfigs": [],
+    "id": "ExtBox1-ext-gen3674",
     "designerId": "513759c1-12e2-4a8a-b5b8-6051975b79d7",
-    "$viewOrder": 0,
     "cn": [
         {
-            "id": "ExtBox1-ext-gen2697",
             "type": "template",
             "reference": {
                 "name": "tpl",
@@ -28,6 +25,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "tpl",
                 "implHandler": [
                     "<h1>{name}</h1>",
                     "<h2><tpl if=\"location.town\">{location.town} </tpl>{location.country}</h2>",
@@ -40,10 +38,9 @@
                     "<p><strong>Overview</strong><br />{description}</p>",
                     ""
                 ],
-                "designer|displayName": "tpl",
-                "designer|userClassName": "tpl"
+                "designer|displayName": "tpl"
             },
-            "customConfigs": []
+            "designerId": "b7a7941b-c180-43e4-9fc7-a92156705c94"
         }
     ]
 }

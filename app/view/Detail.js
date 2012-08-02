@@ -34,7 +34,15 @@ Ext.define('Kiva.view.Detail', {
             type: 'vbox'
         },
         modal: true,
-        loan: null,
+        loan: {
+            
+        },
+        listeners: [
+            {
+                fn: 'onPanelInitialize',
+                event: 'initialize'
+            }
+        ],
         items: [
             {
                 xtype: 'carousel',
@@ -55,12 +63,6 @@ Ext.define('Kiva.view.Detail', {
                 xtype: 'button',
                 id: 'lendButton',
                 text: 'Lend $25'
-            }
-        ],
-        listeners: [
-            {
-                fn: 'onPanelInitialize',
-                event: 'initialize'
             }
         ]
     },

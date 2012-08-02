@@ -1,5 +1,4 @@
 {
-    "id": "ExtBox1-ext-gen2211",
     "type": "application",
     "reference": {
         "name": "items",
@@ -22,20 +21,16 @@
             "detail.Schedule",
             "Detail",
             "LoanFilter",
-            "LoanList",
+            "LoansList",
             "LoansListItem",
             "LoansListItemCompletion",
             "Main"
         ],
         "name": "Kiva",
-        "phoneStartupScreen": "resources/loading/Homescreen.jpg",
-        "tabletStartupScreen": "resources/loading/Homescreen~ipad.jpg",
         "controllers": [
             "Loans"
         ]
     },
-    "customConfigs": [],
-    "designerId": "application",
-    "$viewOrder": 0,
-    "iconCls": "icon-application"
+    "id": "ExtBox1-ext-gen2211",
+    "designerId": "application"
 }

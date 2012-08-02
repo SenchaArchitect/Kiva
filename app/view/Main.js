@@ -19,7 +19,7 @@ Ext.define('Kiva.view.Main', {
 
     requires: [
         'Kiva.view.LoanFilter',
-        'Kiva.view.LoanList'
+        'Kiva.view.LoansList'
     ],
 
     config: {
@@ -32,7 +32,7 @@ Ext.define('Kiva.view.Main', {
                 docked: 'top'
             },
             {
-                xtype: 'loanlist'
+                xtype: 'loanslist'
             }
         ]
     }

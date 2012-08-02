@@ -3,19 +3,21 @@
     "settings": {
         "urlPrefix": "",
         "spacesToIndent": 4,
-        "codeGenFormat": "Class",
         "exportPath": "",
-        "senchaIoKey": "",
-        "senchaIoPath": "http://extjs.cachefly.net/designer/IO/",
         "lineEnding": "LF",
-        "instantiateStore": true,
         "genTimestamps": false,
         "cacheBust": false,
+        "codeGenFormat": "Class",
+        "senchaIoKey": "",
+        "senchaIoPath": "http://extjs.cachefly.net/designer/IO/",
+        "instantiateStore": true,
         "saveOnDeploy": false,
         "appName": "MyApp"
     },
     "xdsVersion": "2.0.0",
-    "xdsBuild": 210000000502,
+    "xdsBuild": 557,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000495,
     "framework": "touch20",
     "topInstanceFileMap": {
         "513759c1-12e2-4a8a-b5b8-6051975b79d7": {
@@ -60,11 +62,11 @@
         },
         "40c12b1f-2659-4c24-bad6-6672d4d0b90b": {
             "paths": [
-                "metadata/view/LoanList",
-                "app/view/override/LoanList.js",
-                "app/view/LoanList.js"
+                "metadata/view/LoansList",
+                "app/view/override/LoansList.js",
+                "app/view/LoansList.js"
             ],
-            "className": "LoanList"
+            "className": "LoansList"
         },
         "7e648599-3519-4afa-8f50-1bcedb811d75": {
             "paths": [
@@ -138,5 +140,36 @@
             ],
             "className": "GoogleMapsAPI"
         }
+    },
+    "viewOrderMap": {
+        "view": [
+            "513759c1-12e2-4a8a-b5b8-6051975b79d7",
+            "9c8b4b3a-dd9d-4e9a-8c39-de58f9e6791f",
+            "db1ffbfd-ecce-49c6-9fb3-cfcf75cf54e3",
+            "502e7c24-8ce7-4387-8bd0-7c7b3aeeeedc",
+            "db753b0c-c712-4149-bb62-862860e75414",
+            "40c12b1f-2659-4c24-bad6-6672d4d0b90b",
+            "7e648599-3519-4afa-8f50-1bcedb811d75",
+            "28654942-e312-4b8d-ab80-5e12c88f0cc7",
+            "2f116102-9fd6-4bfc-8755-92a2de790577"
+        ],
+        "store": [
+            "e1cb338e-dac7-4fbc-ab0d-2e7c0a7a112e"
+        ],
+        "controller": [
+            "518b9576-2d9d-42b6-9e14-f9107124020d"
+        ],
+        "model": [
+            "4ee53f7d-5b84-48c9-b03d-d95a3dbae233"
+        ],
+        "resource": [
+            "f8f2ab7b-a2d2-4700-9cfe-7e85540dfc9e",
+            "ed24e683-53fa-4b1e-9331-c8009d9ab838",
+            "2238470a-f660-41e8-a4ce-03c33d19bcd0",
+            "14a64ebf-1e18-43dc-98d3-03354d2eb9a6"
+        ],
+        "app": [
+            "application"
+        ]
     }
 }

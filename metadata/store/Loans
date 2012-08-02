@@ -1,5 +1,4 @@
 {
-    "id": "ExtBox1-ext-gen6836",
     "type": "store",
     "reference": {
         "name": "items",
@@ -7,52 +6,12 @@
     },
     "codeClass": null,
     "userConfig": {
-        "autoLoad": true,
+        "designer|userClassName": "Loans",
+        "autoLoad": null,
         "model": "Loan",
-        "remoteFilter": true,
-        "storeId": "Loans",
-        "designer|userClassName": "Loans"
+        "remoteFilter": null,
+        "storeId": "Loans"
     },
-    "customConfigs": [
-        {
-            "group": "(Custom Properties)",
-            "name": "proxy",
-            "type": "object"
-        }
-    ],
-    "designerId": "e1cb338e-dac7-4fbc-ab0d-2e7c0a7a112e",
-    "$viewOrder": 0,
-    "cn": [
-        {
-            "id": "ExtBox1-ext-gen2807",
-            "type": "object",
-            "reference": {
-                "name": "proxy",
-                "type": "object"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "implHandler": [
-                    "{",
-                    "    type: 'kiva',",
-                    "",
-                    "    reader: {",
-                    "        type: 'json',",
-                    "        successProperty: 'success',",
-                    "        rootProperty: function(data) {",
-                    "            if (data.error || data.query.count === 0) {",
-                    "                return [];",
-                    "            } else {",
-                    "                return data.query.results.loans;",
-                    "            }",
-                    "        }",
-                    "    }",
-                    "}"
-                ],
-                "designer|displayName": "proxy",
-                "designer|userClassName": "proxy"
-            },
-            "customConfigs": []
-        }
-    ]
+    "id": "ExtBox1-ext-gen6836",
+    "designerId": "e1cb338e-dac7-4fbc-ab0d-2e7c0a7a112e"
 }
