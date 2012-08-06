@@ -1,5 +1,4 @@
 {
-    "id": "ExtBox1-ext-gen5512",
     "type": "map",
     "reference": {
         "name": "items",
@@ -7,35 +6,18 @@
     },
     "codeClass": null,
     "userConfig": {
-        "height": null,
         "designer|userClassName": "detail.Map",
-        "designer|userAlias": "detailMap"
+        "designer|userAlias": "detailMap",
+        "height": null,
+        "mapOptions": [
+            "{",
+            "            //center: this.mapPosition,",
+            "            disableDefaultUI: true,",
+            "            zoom: 5,",
+            "            draggable: false",
+            "        }"
+        ]
     },
-    "customConfigs": [],
-    "designerId": "db1ffbfd-ecce-49c6-9fb3-cfcf75cf54e3",
-    "$viewOrder": 1,
-    "cn": [
-        {
-            "id": "ExtBox1-ext-gen4347",
-            "type": "object",
-            "reference": {
-                "name": "mapOptions",
-                "type": "object"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "implHandler": [
-                    "{",
-                    "            // center: this.mapPosition,",
-                    "            disableDefaultUI: true,",
-                    "            zoom: 5,",
-                    "            draggable: false",
-                    "        }"
-                ],
-                "designer|displayName": "mapOptions",
-                "designer|userClassName": "mapOptions"
-            },
-            "customConfigs": []
-        }
-    ]
+    "id": "ExtBox1-ext-gen5512",
+    "designerId": "db1ffbfd-ecce-49c6-9fb3-cfcf75cf54e3"
 }

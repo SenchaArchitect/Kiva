@@ -34,7 +34,12 @@ Ext.define('Kiva.view.Detail', {
             type: 'vbox'
         },
         modal: true,
-        loan: null,
+        listeners: [
+            {
+                fn: 'onPanelInitialize',
+                event: 'initialize'
+            }
+        ],
         items: [
             {
                 xtype: 'carousel',
@@ -56,12 +61,6 @@ Ext.define('Kiva.view.Detail', {
                 id: 'lendButton',
                 text: 'Lend $25'
             }
-        ],
-        listeners: [
-            {
-                fn: 'onPanelInitialize',
-                event: 'initialize'
-            }
         ]
     },
 
@@ -82,58 +81,76 @@ Ext.define('Kiva.view.Detail', {
     },
 
     updateLoan: function(newLoan) {
-        var carousel = this.down('carousel'),
-            information = this.down('detailInformation'),
-            payments = this.down('detailSchedule'),
-            map = this.down('detailMap'),
-            coords = newLoan.get('location').geo.pairs.split(' ').map(parseFloat);
+        var carousel = this.down('carousel'),
+        information = this.down('detailInformation'),
+        payments = this.down('detailSchedule'),
+        map = this.down('detailMap'),
+        coords = newLoan.get('location').geo.pairs.split(' ').map(parseFloat);
 
-        information.setData(newLoan.data);
-        payments.setData(newLoan.data.terms.scheduled_payments);
+        information.setData(newLoan.data);
+        payments.setData(newLoan.data.terms.scheduled_payments);
 
-        //update the lend button
-        this.updateLendButton();
+        //update the lend button
+        this.updateLendButton();
 
-        //update the map
-        if (this.mapMarker) {
-            this.mapMarker.setMap(null);
-            delete this.mapMarker;
-        }
+        //update the map
+        if (this.mapMarker) {
+            this.mapMarker.setMap(null);
+            delete this.mapMarker;
+        }
 
-        //add a marker for the Loanee's position on the map
-        this.mapMarker = new google.maps.Marker({
-            map: map.map,
-            title : newLoan.get('name'),
-            position: new google.maps.LatLng(coords[0], coords[1])
-        });
+        //add a marker for the Loanee's position on the map
+        this.mapMarker = new google.maps.Marker({
+            map: map.map,
+            title : newLoan.get('name'),
+            position: new google.maps.LatLng(coords[0], coords[1])
+        });
 
-        carousel.setActiveItem(0);
+        carousel.setActiveItem(0);
 
         map.setMapCenter(this.mapMarker.position);
     },
 
     updateLendButton: function() {
 
-        var url    = "http://www.kiva.org/lend/" + this.getLoan().getId(),
-            button = this.down('button');
-        button.on('tap', function(){
-            window.open(url);
-        });
+        var url    = "http://www.kiva.org/lend/" + this.getLoan().getId(),
+        button = this.down('button');
+        button.on('tap', function(){
+            window.open(url);
+        });
 
-        /*
+        /*
 
-        link = Ext.getDom('linker'),
-        clickEvent = document.createEvent('Event');
+        link = Ext.getDom('linker'),
+        clickEvent = document.createEvent('Event');
 
 
-        http://www.sencha.com/forum/showthread.php?130358-window.open()-from-toolbar-button-opens-window-from-list-item-a-new-tab&p=639938#post639938
+        http://www.sencha.com/forum/showthread.php?130358-window.open()-from-toolbar-button-opens-window-from-list-item-a-new-tab&p=639938#post639938
 
-        clickEvent.initEvent('click', true, false);
+        clickEvent.initEvent('click', true, false);
 
-        button.setHandler(function() {
-        link.href = url;
-        link.dispatchEvent(clickEvent);
+        button.setHandler(function() {
+        link.href = url;
+        link.dispatchEvent(clickEvent);
         });*/
+    },
+
+    setLoan: function(loan) {
+        // Create setter and getter by hand - workaround for inabilty to set 'loan: null' in config
+        this.loan = loan;
+
+        if (typeof this.loan !== 'undefined') {
+            this.updateLoan(this.loan);
+        }
+
+    },
+
+    getLoan: function() {
+        if (!this.loan) {
+            this.loan = null;
+        }
+
+        return this.loan;
     }
 
 });

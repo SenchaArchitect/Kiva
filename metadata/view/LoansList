@@ -1,5 +1,4 @@
 {
-    "id": "ExtBox1-ext-gen22945",
     "type": "dataview",
     "reference": {
         "name": "items",
@@ -7,41 +6,33 @@
     },
     "codeClass": null,
     "userConfig": {
+        "refreshed": [
+            "[\"[\\\"[\\\\\\\"false\\\\\\\"]\\\"]\"]"
+        ],
+        "designer|userClassName": "LoansList",
+        "designer|userAlias": "loanslist",
         "ui": "loans",
         "defaultType": "loanslistitem",
         "layout": null,
+        "deselectOnContainerClick": false,
         "store": "Loans",
-        "useComponents": true,
-        "designer|userClassName": "LoansList",
-        "designer|userAlias": "loanslist"
+        "useComponents": true
     },
-    "customConfigs": [],
+    "configAlternates": {
+        "dataMap": "object",
+        "refreshed": "object"
+    },
+    "id": "ExtBox1-ext-gen22945",
     "designerId": "40c12b1f-2659-4c24-bad6-6672d4d0b90b",
-    "$viewOrder": 5,
+    "customConfigs": [
+        {
+            "group": "(Custom Properties)",
+            "name": "refreshed",
+            "type": "string"
+        }
+    ],
     "cn": [
         {
-            "id": "ExtBox1-ext-gen23477",
-            "type": "basiceventbinding",
-            "reference": {
-                "name": "listeners",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "fn": "onDataviewInitialize",
-                "implHandler": [
-                    "this.refreshed = false;",
-                    "",
-                    "Ext.require('Kiva.view.LoansListItem'); // TODO : check back to see if this works",
-                    " "
-                ],
-                "name": "initialize",
-                "designer|userClassName": "onDataviewInitialize"
-            },
-            "customConfigs": []
-        },
-        {
-            "id": "ExtBox1-ext-gen24228",
             "type": "basicfunction",
             "reference": {
                 "name": "items",
@@ -49,6 +40,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "onLoad",
                 "fn": "onLoad",
                 "implHandler": [
                     "var me = this,",
@@ -65,10 +57,9 @@
                     "",
                     "    me.getScrollable().getScroller().setDisabled(true);",
                     "}"
-                ],
-                "designer|userClassName": "onLoad"
+                ]
             },
-            "customConfigs": []
+            "designerId": "8d8c3715-5b23-44d5-a035-f77f760cbecf"
         }
     ]
 }

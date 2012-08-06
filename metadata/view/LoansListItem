@@ -1,5 +1,4 @@
 {
-    "id": "ExtBox1-ext-gen25936",
     "type": "dataitem",
     "reference": {
         "name": "items",
@@ -7,328 +6,106 @@
     },
     "codeClass": null,
     "userConfig": {
+        "container|align": null,
+        "designer|userClassName": "LoansListItem",
+        "designer|userAlias": "loanslistitem",
         "cls": [
             "x-list-item"
         ],
         "padding": null,
-        "layout": "vbox",
-        "designer|userClassName": "LoansListItem",
-        "designer|userAlias": "loanslistitem",
-        "container|pack": "center"
+        "layout": "vbox"
     },
-    "customConfigs": [
-        {
-            "group": "(Custom Properties)",
-            "name": "name",
-            "type": "object"
-        },
-        {
-            "group": "(Custom Properties)",
-            "name": "use",
-            "type": "object"
-        },
-        {
-            "group": "(Custom Properties)",
-            "name": "avatar",
-            "type": "object"
-        },
-        {
-            "group": "(Custom Properties)",
-            "name": "completion",
-            "type": "object"
-        },
-        {
-            "group": "(Custom Properties)",
-            "name": "dataMap",
-            "type": "object"
-        }
-    ],
+    "id": "ExtBox1-ext-gen25936",
     "designerId": "7e648599-3519-4afa-8f50-1bcedb811d75",
-    "$viewOrder": 6,
     "cn": [
         {
-            "id": "ExtBox1-ext-gen29058",
-            "type": "basicfunction",
+            "type": "component",
             "reference": {
                 "name": "items",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "fn": "applyName",
-                "designer|params": [
-                    "config"
-                ],
-                "implHandler": [
-                    "return Ext.factory(config, Ext.Component, this.getName());"
-                ],
-                "designer|userClassName": "applyName"
-            },
-            "customConfigs": []
-        },
-        {
-            "id": "ExtBox1-ext-gen29135",
-            "type": "basicfunction",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "fn": "updateName",
-                "designer|params": [
-                    "newName"
-                ],
-                "implHandler": [
-                    "if (newName){",
-                    "    this.add(newName);",
-                    "}"
-                ],
-                "designer|userClassName": "updateName"
-            },
-            "customConfigs": []
-        },
-        {
-            "id": "ExtBox1-ext-gen29212",
-            "type": "basicfunction",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "fn": "applyUse",
-                "designer|params": [
-                    "config"
-                ],
-                "implHandler": [
-                    "return Ext.factory(config, Ext.Component, this.getUse());"
-                ],
-                "designer|userClassName": "applyUse"
-            },
-            "customConfigs": []
-        },
-        {
-            "id": "ExtBox1-ext-gen29289",
-            "type": "basicfunction",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "fn": "updateUse",
-                "designer|params": [
-                    "newUse"
-                ],
-                "implHandler": [
-                    "if (newUse) {",
-                    "    this.add(newUse);",
-                    "}"
-                ],
-                "designer|userClassName": "updateUse"
-            },
-            "customConfigs": []
-        },
-        {
-            "id": "ExtBox1-ext-gen29366",
-            "type": "basicfunction",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "fn": "applyAvatar",
-                "designer|params": [
-                    "config"
-                ],
-                "implHandler": [
-                    "return Ext.factory(config, Ext.Img, this.getAvatar());"
-                ],
-                "designer|userClassName": "applyAvatar"
-            },
-            "customConfigs": []
-        },
-        {
-            "id": "ExtBox1-ext-gen29443",
-            "type": "basicfunction",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "fn": "updateAvatar",
-                "designer|params": [
-                    "newAvatar"
-                ],
-                "implHandler": [
-                    "if (newAvatar) {",
-                    "    this.add(newAvatar);",
-                    "}"
-                ],
-                "designer|userClassName": "updateAvatar"
-            },
-            "customConfigs": []
-        },
-        {
-            "id": "ExtBox1-ext-gen29520",
-            "type": "basicfunction",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "fn": "applyCompletion",
-                "designer|params": [
-                    "config"
-                ],
-                "implHandler": [
-                    "return Ext.factory(config, Kiva.view.LoansListItemCompletion, this.getCompletion());"
-                ],
-                "designer|userClassName": "applyCompletion"
-            },
-            "customConfigs": []
-        },
-        {
-            "id": "ExtBox1-ext-gen32116",
-            "type": "basicfunction",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "fn": "updateCompletion",
-                "designer|params": [
-                    "newCompletion"
-                ],
-                "implHandler": [
-                    "if (newCompletion) {",
-                    "    this.add(newCompletion);",
-                    "}"
-                ],
-                "designer|userClassName": "updateCompletion"
-            },
-            "customConfigs": [
-                {
-                    "group": "(Custom Properties)",
-                    "name": "dataMap",
-                    "type": "object"
-                }
-            ]
-        },
-        {
-            "id": "ExtBox1-ext-gen8383",
-            "type": "object",
-            "reference": {
-                "name": "name",
-                "type": "object"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "implHandler": [
-                    " {",
-                    "            cls: 'name'",
-                    "        }"
-                ],
+                "designer|userClassName": "MyComponent1",
                 "designer|displayName": "name",
-                "designer|userClassName": "name"
+                "cls": [
+                    "name"
+                ],
+                "itemId": "name"
             },
-            "customConfigs": []
+            "designerId": "13924b6f-8151-485c-b698-cafe04034a4e"
         },
         {
-            "id": "ExtBox1-ext-gen8688",
-            "type": "object",
+            "type": "component",
             "reference": {
-                "name": "use",
-                "type": "object"
+                "name": "items",
+                "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "implHandler": [
-                    "{",
-                    "            cls: 'use'",
-                    "        }"
-                ],
+                "designer|userClassName": "MyComponent2",
                 "designer|displayName": "use",
-                "designer|userClassName": "use"
+                "cls": [
+                    "use"
+                ],
+                "itemId": "use"
             },
-            "customConfigs": []
+            "designerId": "c7d5cb92-3e42-414b-8b63-31ca3559bbfc"
         },
         {
-            "id": "ExtBox1-ext-gen8968",
-            "type": "object",
+            "type": "image",
             "reference": {
-                "name": "avatar",
-                "type": "object"
+                "name": "items",
+                "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "implHandler": [
-                    " {",
-                    "            docked: 'left'",
-                    "        }"
-                ],
+                "designer|userClassName": "MyImage",
                 "designer|displayName": "avatar",
-                "designer|userClassName": "avatar"
+                "docked": "left",
+                "height": null,
+                "itemId": "avatar",
+                "width": null
             },
-            "customConfigs": []
+            "designerId": "b71c7c5f-b05d-4133-81e0-c743daf4d3ac"
         },
         {
-            "id": "ExtBox1-ext-gen9250",
-            "type": "object",
+            "type": "linkedinstance",
             "reference": {
-                "name": "completion",
-                "type": "object"
+                "name": "items",
+                "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "implHandler": [
-                    "{",
-                    "            docked: 'right',",
-                    "            hidden: (Ext.os.deviceType === 'Phone') ? true : false",
-                    "        }"
-                ],
                 "designer|displayName": "completion",
-                "designer|userClassName": "completion"
+                "docked": "right",
+                "itemId": "completion"
             },
-            "customConfigs": []
+            "designerId": "16b6cdff-1677-4bdb-a958-700c7318e076",
+            "masterInstanceId": "ExtBox1-ext-gen8241"
         },
         {
-            "id": "ExtBox1-ext-gen2475",
-            "type": "object",
+            "type": "fixedfunction",
             "reference": {
-                "name": "dataMap",
-                "type": "object"
+                "name": "items",
+                "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "implHandler": [
-                    "{",
-                    "    getName: {",
-                    "        setHtml: 'name'",
-                    "    },",
-                    "",
-                    "    getUse: {",
-                    "        setHtml: 'use'",
-                    "    },",
-                    "",
-                    "    getAvatar: {",
-                    "        setSrc: 'image'",
-                    "    },",
-                    "",
-                    "    getCompletion: {",
-                    "        setPercentFunded: 'percent_funded'",
-                    "    }",
-                    "}"
+                "designer|userClassName": "updateRecord",
+                "fn": "updateRecord",
+                "designer|params": [
+                    "record"
                 ],
-                "designer|displayName": "dataMap",
-                "designer|userClassName": "dataMap"
+                "implHandler": [
+                    "// Provide an implementation to update this container's child items\r",
+                    "this.down('#name').setHtml(record.get('name'));\r",
+                    "this.down('#use').setHtml(record.get('use'));\r",
+                    "this.down('#avatar').setSrc(record.get('image'));\r",
+                    "this.down('#completion').setPercentFunded(record.get('percent_funded'));"
+                ]
             },
-            "customConfigs": []
+            "designerId": "a5e2d44c-897a-4b7d-b31f-7f97895317b7"
         }
     ]
 }

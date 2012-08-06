@@ -1,5 +1,4 @@
 {
-    "id": "ExtBox1-ext-gen37100",
     "type": "datamodel",
     "reference": {
         "name": "items",
@@ -9,12 +8,10 @@
     "userConfig": {
         "designer|userClassName": "Loan"
     },
-    "customConfigs": [],
+    "id": "ExtBox1-ext-gen37100",
     "designerId": "4ee53f7d-5b84-48c9-b03d-d95a3dbae233",
-    "$viewOrder": 0,
     "cn": [
         {
-            "id": "ExtBox1-ext-gen37306",
             "type": "datafield",
             "reference": {
                 "name": "fields",
@@ -22,14 +19,13 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "MyField",
                 "name": "id",
-                "type": "int",
-                "designer|userClassName": "MyField"
+                "type": "int"
             },
-            "customConfigs": []
+            "designerId": "40d0db3e-6444-400e-adac-1814e268a5c2"
         },
         {
-            "id": "ExtBox1-ext-gen37420",
             "type": "datafield",
             "reference": {
                 "name": "fields",
@@ -37,14 +33,13 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "MyField1",
                 "name": "name",
-                "type": "string",
-                "designer|userClassName": "MyField1"
+                "type": "string"
             },
-            "customConfigs": []
+            "designerId": "59e47e8b-d1fa-46a0-96e3-687cec792cd6"
         },
         {
-            "id": "ExtBox1-ext-gen37531",
             "type": "datafield",
             "reference": {
                 "name": "fields",
@@ -52,14 +47,13 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "MyField2",
                 "name": "status",
-                "type": "string",
-                "designer|userClassName": "MyField2"
+                "type": "string"
             },
-            "customConfigs": []
+            "designerId": "a70b72da-1f1f-4bc0-aa09-512510419ae7"
         },
         {
-            "id": "ExtBox1-ext-gen37645",
             "type": "datafield",
             "reference": {
                 "name": "fields",
@@ -67,14 +61,13 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "MyField3",
                 "name": "loan_amount",
-                "type": "int",
-                "designer|userClassName": "MyField3"
+                "type": "int"
             },
-            "customConfigs": []
+            "designerId": "776af993-ce82-4ee4-98d7-1b83d8ba5637"
         },
         {
-            "id": "ExtBox1-ext-gen37762",
             "type": "datafield",
             "reference": {
                 "name": "fields",
@@ -82,14 +75,13 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "MyField4",
                 "name": "funded_amount",
-                "type": "int",
-                "designer|userClassName": "MyField4"
+                "type": "int"
             },
-            "customConfigs": []
+            "designerId": "cd1cf4cf-f970-4658-afad-986a0c30043e"
         },
         {
-            "id": "ExtBox1-ext-gen37884",
             "type": "datafield",
             "reference": {
                 "name": "fields",
@@ -97,14 +89,13 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "MyField5",
                 "name": "basket_amount",
-                "type": "int",
-                "designer|userClassName": "MyField5"
+                "type": "int"
             },
-            "customConfigs": []
+            "designerId": "850faff7-ce2c-4c44-ae5a-60cc58475078"
         },
         {
-            "id": "ExtBox1-ext-gen38010",
             "type": "datafield",
             "reference": {
                 "name": "fields",
@@ -112,14 +103,13 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "MyField6",
                 "name": "borrower_count",
-                "type": "int",
-                "designer|userClassName": "MyField6"
+                "type": "int"
             },
-            "customConfigs": []
+            "designerId": "e259e333-95a7-4cdc-8dff-eaffb9296fa8"
         },
         {
-            "id": "ExtBox1-ext-gen38139",
             "type": "datafield",
             "reference": {
                 "name": "fields",
@@ -127,14 +117,13 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "MyField7",
                 "name": "activity",
-                "type": "string",
-                "designer|userClassName": "MyField7"
+                "type": "string"
             },
-            "customConfigs": []
+            "designerId": "991da87d-aba0-4341-9c07-5b0b8c2dd67c"
         },
         {
-            "id": "ExtBox1-ext-gen38271",
             "type": "datafield",
             "reference": {
                 "name": "fields",
@@ -142,14 +131,13 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "MyField8",
                 "name": "sector",
-                "type": "string",
-                "designer|userClassName": "MyField8"
+                "type": "string"
             },
-            "customConfigs": []
+            "designerId": "d60003b5-cd07-4dcb-9978-ab7e589f893f"
         },
         {
-            "id": "ExtBox1-ext-gen38407",
             "type": "datafield",
             "reference": {
                 "name": "fields",
@@ -157,14 +145,13 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "MyField9",
                 "name": "use",
-                "type": "string",
-                "designer|userClassName": "MyField9"
+                "type": "string"
             },
-            "customConfigs": []
+            "designerId": "c41e88d8-2da4-4a46-a764-cdeef2c9d2a0"
         },
         {
-            "id": "ExtBox1-ext-gen38545",
             "type": "datafield",
             "reference": {
                 "name": "fields",
@@ -172,14 +159,13 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "MyField10",
                 "name": "partner_id",
-                "type": "int",
-                "designer|userClassName": "MyField10"
+                "type": "int"
             },
-            "customConfigs": []
+            "designerId": "a5e704f6-57dc-4083-9a81-ae03857f494b"
         },
         {
-            "id": "ExtBox1-ext-gen38686",
             "type": "datafield",
             "reference": {
                 "name": "fields",
@@ -187,15 +173,14 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "MyField11",
                 "mapping": "description.texts.en",
                 "name": "description",
-                "type": "string",
-                "designer|userClassName": "MyField11"
+                "type": "string"
             },
-            "customConfigs": []
+            "designerId": "fd5ad9ef-a805-4c97-bf70-7fd8109afd98"
         },
         {
-            "id": "ExtBox1-ext-gen40848",
             "type": "datafield",
             "reference": {
                 "name": "fields",
@@ -203,15 +188,14 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "MyField12",
                 "mapping": "image.id",
                 "name": "image",
-                "type": "string",
-                "designer|userClassName": "MyField12"
+                "type": "string"
             },
-            "customConfigs": [],
+            "designerId": "bdd0707e-af90-4230-a272-0ab213dc2d40",
             "cn": [
                 {
-                    "id": "ExtBox1-ext-gen41311",
                     "type": "fixedfunction",
                     "reference": {
                         "name": "items",
@@ -219,6 +203,7 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "designer|userClassName": "convert",
                         "fn": "convert",
                         "designer|params": [
                             "v",
@@ -226,16 +211,13 @@
                         ],
                         "implHandler": [
                             "return \"http://kiva.org/img/w80h80/\" + v + \".jpg\";"
-                        ],
-                        "designer|userClassName": "convert"
+                        ]
                     },
-                    "customConfigs": [],
-                    "iconCls": "icon-basic-function"
+                    "designerId": "da37d384-0669-48e2-83de-15116681438f"
                 }
             ]
         },
         {
-            "id": "ExtBox1-ext-gen40995",
             "type": "datafield",
             "reference": {
                 "name": "fields",
@@ -243,13 +225,12 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "percent_funded",
-                "designer|userClassName": "MyField13"
+                "designer|userClassName": "MyField13",
+                "name": "percent_funded"
             },
-            "customConfigs": [],
+            "designerId": "b159f9a7-8183-4763-ab2d-2bc63c621c10",
             "cn": [
                 {
-                    "id": "ExtBox1-ext-gen41819",
                     "type": "fixedfunction",
                     "reference": {
                         "name": "items",
@@ -257,6 +238,7 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "designer|userClassName": "convert",
                         "fn": "convert",
                         "designer|params": [
                             "v",
@@ -264,16 +246,13 @@
                         ],
                         "implHandler": [
                             "return parseInt(rec.data.funded_amount / rec.data.loan_amount * 100, 10);"
-                        ],
-                        "designer|userClassName": "convert"
+                        ]
                     },
-                    "customConfigs": [],
-                    "iconCls": "icon-basic-function"
+                    "designerId": "dd986883-bbb7-44d4-8f73-1bc0576adf83"
                 }
             ]
         },
         {
-            "id": "ExtBox1-ext-gen7902",
             "type": "datafield",
             "reference": {
                 "name": "fields",
@@ -281,13 +260,12 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "terms",
-                "designer|userClassName": "MyField14"
+                "designer|userClassName": "MyField14",
+                "name": "terms"
             },
-            "customConfigs": []
+            "designerId": "372fb02f-2787-47f1-b016-4a275590ed12"
         },
         {
-            "id": "ExtBox1-ext-gen8058",
             "type": "datafield",
             "reference": {
                 "name": "fields",
@@ -295,10 +273,10 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "location",
-                "designer|userClassName": "MyField15"
+                "designer|userClassName": "MyField15",
+                "name": "location"
             },
-            "customConfigs": []
+            "designerId": "97dd9ae6-24ae-4332-86c8-2ec99e4e8be4"
         }
     ]
 }

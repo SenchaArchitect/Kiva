@@ -1,5 +1,4 @@
 {
-    "id": "ExtBox1-ext-gen9316",
     "type": "panel",
     "reference": {
         "name": "items",
@@ -7,30 +6,41 @@
     },
     "codeClass": null,
     "userConfig": {
+        "designer|userClassName": "Detail",
+        "designer|userAlias": "detail",
         "bottom": 0,
-        "cls": null,
         "right": 0,
         "top": 0,
         "ui": "detail",
         "width": 400,
         "hideOnMaskTap": true,
         "layout": "vbox",
-        "modal": true,
-        "designer|userClassName": "Detail",
-        "designer|userAlias": "detail"
+        "modal": true
     },
-    "customConfigs": [
-        {
-            "group": "(Custom Properties)",
-            "name": "loan",
-            "type": "object"
-        }
-    ],
+    "configAlternates": {
+        "loan": "object"
+    },
+    "id": "ExtBox1-ext-gen9316",
     "designerId": "502e7c24-8ce7-4387-8bd0-7c7b3aeeeedc",
-    "$viewOrder": 3,
     "cn": [
         {
-            "id": "ExtBox1-ext-gen10184",
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onPanelInitialize",
+                "fn": "onPanelInitialize",
+                "implHandler": [
+                    "this.setBaseCls(Ext.baseCSSPrefix + 'sheet');"
+                ],
+                "name": "initialize"
+            },
+            "designerId": "276aca71-4647-4603-a4a1-27c8077f90ce"
+        },
+        {
             "type": "carousel",
             "reference": {
                 "name": "items",
@@ -38,54 +48,44 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyCarousel",
-                "layout|flex": 1
+                "layout|flex": 1,
+                "designer|userClassName": "MyCarousel"
             },
-            "customConfigs": [],
+            "designerId": "85e59ef6-6562-43e0-b41a-bf8844d7191b",
             "cn": [
                 {
-                    "id": "ExtBox1-ext-gen10460",
                     "type": "linkedinstance",
                     "reference": {
                         "name": "items",
                         "type": "array"
                     },
                     "codeClass": null,
-                    "userConfig": {},
-                    "customConfigs": [],
-                    "iconCls": "icon-linkedinstance",
+                    "designerId": "7454f94d-49f7-4068-a42a-fbd0287f90e2",
                     "masterInstanceId": "ExtBox1-ext-gen3674"
                 },
                 {
-                    "id": "ExtBox1-ext-gen11107",
                     "type": "linkedinstance",
                     "reference": {
                         "name": "items",
                         "type": "array"
                     },
                     "codeClass": null,
-                    "userConfig": {},
-                    "customConfigs": [],
-                    "iconCls": "icon-linkedinstance",
+                    "designerId": "7c2895ae-7360-4da7-aa05-1ea0a1efc8a8",
                     "masterInstanceId": "ExtBox1-ext-gen8104"
                 },
                 {
-                    "id": "ExtBox1-ext-gen11767",
                     "type": "linkedinstance",
                     "reference": {
                         "name": "items",
                         "type": "array"
                     },
                     "codeClass": null,
-                    "userConfig": {},
-                    "customConfigs": [],
-                    "iconCls": "icon-linkedinstance",
+                    "designerId": "ca008aff-24e4-4114-abb1-c2ab76661879",
                     "masterInstanceId": "ExtBox1-ext-gen5512"
                 }
             ]
         },
         {
-            "id": "ExtBox1-ext-gen12876",
             "type": "button",
             "reference": {
                 "name": "items",
@@ -93,14 +93,13 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "MyButton",
                 "id": "lendButton",
-                "text": "Lend $25",
-                "designer|userClassName": "MyButton"
+                "text": "Lend $25"
             },
-            "customConfigs": []
+            "designerId": "0d83ac5c-272a-496b-8ab0-fd49cb937cbd"
         },
         {
-            "id": "ExtBox1-ext-gen13209",
             "type": "basicfunction",
             "reference": {
                 "name": "items",
@@ -108,6 +107,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "hide",
                 "fn": "hide",
                 "designer|params": [
                     "animation"
@@ -122,13 +122,11 @@
                     "//show the mask again",
                     "me.callParent();",
                     ""
-                ],
-                "designer|userClassName": "hide"
+                ]
             },
-            "customConfigs": []
+            "designerId": "56b6e33e-54ae-4733-87b4-56dc1ab657ae"
         },
         {
-            "id": "ExtBox1-ext-gen13725",
             "type": "basicfunction",
             "reference": {
                 "name": "items",
@@ -136,46 +134,45 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "updateLoan",
                 "fn": "updateLoan",
                 "designer|params": [
                     "newLoan"
                 ],
                 "implHandler": [
-                    "var carousel = this.down('carousel'),",
-                    "    information = this.down('detailInformation'),",
-                    "    payments = this.down('detailSchedule'),",
-                    "    map = this.down('detailMap'),",
-                    "    coords = newLoan.get('location').geo.pairs.split(' ').map(parseFloat);",
-                    "",
-                    "information.setData(newLoan.data);",
-                    "payments.setData(newLoan.data.terms.scheduled_payments);",
-                    "",
-                    "//update the lend button",
-                    "this.updateLendButton();",
-                    "",
-                    "//update the map",
-                    "if (this.mapMarker) {",
-                    "    this.mapMarker.setMap(null);",
-                    "    delete this.mapMarker;",
-                    "}",
-                    "",
-                    "//add a marker for the Loanee's position on the map",
-                    "this.mapMarker = new google.maps.Marker({",
-                    "    map: map.map,",
-                    "    title : newLoan.get('name'),",
-                    "    position: new google.maps.LatLng(coords[0], coords[1])",
-                    "});",
-                    "",
-                    "carousel.setActiveItem(0);",
-                    "",
+                    "var carousel = this.down('carousel'),\r",
+                    "    information = this.down('detailInformation'),\r",
+                    "    payments = this.down('detailSchedule'),\r",
+                    "    map = this.down('detailMap'),\r",
+                    "    coords = newLoan.get('location').geo.pairs.split(' ').map(parseFloat);\r",
+                    "\r",
+                    "information.setData(newLoan.data);\r",
+                    "payments.setData(newLoan.data.terms.scheduled_payments);\r",
+                    "\r",
+                    "//update the lend button\r",
+                    "this.updateLendButton();\r",
+                    "\r",
+                    "//update the map\r",
+                    "if (this.mapMarker) {\r",
+                    "    this.mapMarker.setMap(null);\r",
+                    "    delete this.mapMarker;\r",
+                    "}\r",
+                    "\r",
+                    "//add a marker for the Loanee's position on the map\r",
+                    "this.mapMarker = new google.maps.Marker({\r",
+                    "    map: map.map,\r",
+                    "    title : newLoan.get('name'),\r",
+                    "    position: new google.maps.LatLng(coords[0], coords[1])\r",
+                    "});\r",
+                    "\r",
+                    "carousel.setActiveItem(0);\r",
+                    "\r",
                     "map.setMapCenter(this.mapMarker.position);"
-                ],
-                "designer|userClassName": "updateLoan"
+                ]
             },
-            "customConfigs": []
+            "designerId": "c5837780-1848-4212-b49b-016e5de7cb8d"
         },
         {
-            "id": "ExtBox1-ext-gen14339",
             "type": "basicfunction",
             "reference": {
                 "name": "items",
@@ -183,68 +180,91 @@
             },
             "codeClass": null,
             "userConfig": {
+                "loan": [
+                    "{}"
+                ],
+                "designer|userClassName": "updateLendButton",
                 "fn": "updateLendButton",
                 "implHandler": [
-                    "",
-                    "var url    = \"http://www.kiva.org/lend/\" + this.getLoan().getId(),",
-                    "    button = this.down('button');",
-                    "button.on('tap', function(){",
-                    "    window.open(url);",
-                    "});",
-                    "",
-                    "/*",
-                    "    ",
-                    "    link = Ext.getDom('linker'),",
-                    "    clickEvent = document.createEvent('Event');",
-                    "",
-                    "",
-                    "http://www.sencha.com/forum/showthread.php?130358-window.open()-from-toolbar-button-opens-window-from-list-item-a-new-tab&p=639938#post639938",
-                    "",
-                    "clickEvent.initEvent('click', true, false);",
-                    "",
-                    "button.setHandler(function() {",
-                    "    link.href = url;",
-                    "    link.dispatchEvent(clickEvent);",
+                    "\r",
+                    "var url    = \"http://www.kiva.org/lend/\" + this.getLoan().getId(),\r",
+                    "    button = this.down('button');\r",
+                    "button.on('tap', function(){\r",
+                    "    window.open(url);\r",
+                    "});\r",
+                    "\r",
+                    "/*\r",
+                    "\r",
+                    "link = Ext.getDom('linker'),\r",
+                    "clickEvent = document.createEvent('Event');\r",
+                    "\r",
+                    "\r",
+                    "http://www.sencha.com/forum/showthread.php?130358-window.open()-from-toolbar-button-opens-window-from-list-item-a-new-tab&p=639938#post639938\r",
+                    "\r",
+                    "clickEvent.initEvent('click', true, false);\r",
+                    "\r",
+                    "button.setHandler(function() {\r",
+                    "link.href = url;\r",
+                    "link.dispatchEvent(clickEvent);\r",
                     "});*/"
-                ],
-                "designer|userClassName": "updateLendButton"
+                ]
             },
-            "customConfigs": []
+            "configAlternates": {
+                "loan": "object"
+            },
+            "designerId": "25d3a9da-80f5-4169-89b3-b6ca0f63b8eb",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "loan",
+                    "type": "string"
+                }
+            ]
         },
         {
-            "id": "ExtBox1-ext-gen3453",
-            "type": "object",
+            "type": "basicfunction",
             "reference": {
-                "name": "loan",
-                "type": "object"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "implHandler": [
-                    "null"
-                ],
-                "designer|displayName": "loan",
-                "designer|userClassName": "loan"
-            },
-            "customConfigs": []
-        },
-        {
-            "id": "ExtBox1-ext-gen9439",
-            "type": "basiceventbinding",
-            "reference": {
-                "name": "listeners",
+                "name": "items",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "fn": "onPanelInitialize",
-                "implHandler": [
-                    "this.setBaseCls(Ext.baseCSSPrefix + 'sheet');"
+                "designer|userClassName": "setLoan",
+                "fn": "setLoan",
+                "designer|params": [
+                    "loan"
                 ],
-                "name": "initialize",
-                "designer|userClassName": "onPanelInitialize"
+                "implHandler": [
+                    "// Create setter and getter by hand - workaround for inabilty to set 'loan: null' in config\r",
+                    "this.loan = loan;\r",
+                    "\r",
+                    "if (typeof this.loan !== 'undefined') {\r",
+                    "    this.updateLoan(this.loan);\r",
+                    "}\r",
+                    ""
+                ]
             },
-            "customConfigs": []
+            "designerId": "87bde2e1-315d-4688-bab5-70da86884e30"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "getLoan",
+                "fn": "getLoan",
+                "implHandler": [
+                    "if (!this.loan) {\r",
+                    "    this.loan = null;\r",
+                    "}\r",
+                    "\r",
+                    "return this.loan;"
+                ]
+            },
+            "designerId": "5ac0fce9-fe95-4a68-b1b4-d230d1fd4a08"
         }
     ]
 }

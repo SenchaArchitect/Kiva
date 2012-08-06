@@ -17,18 +17,16 @@ Ext.define('Kiva.controller.Loans', {
     extend: 'Ext.app.Controller',
 
     config: {
-        profile: Ext.os.deviceType.toLowerCase(),
-
         refs: {
             main: 'mainview',
-            loansList: 'loanlist',
+            loansList: 'loanslist',
             loanFilter: 'loanfilter',
             searchField: 'searchfield',
             refreshButton: 'button[iconCls=refresh]'
         },
 
         control: {
-            "loanlist": {
+            "loanslist": {
                 select: 'onListTap'
             },
             "detail": {
@@ -47,29 +45,17 @@ Ext.define('Kiva.controller.Loans', {
     },
 
     onListTap: function(dataview, record, options) {
-        var list = dataview;
-        var loan = record;
+        if (!this.view) {
+            this.view = Ext.create('Kiva.view.Detail');
+        }
 
+        this.view.setLoan(record);
 
-        if (!this.view) {
-            this.view = Ext.create('Kiva.view.Detail');
-        }
+        if (!this.view.getParent()) {
+            Ext.Viewport.add(this.view);
+        }
 
-        var view = this.view;
-        view.setLoan(loan);
-
-        if (this.getProfile() == "phone") {
-            view.setWidth(null);
-            view.setHeight('85%');
-            view.setTop(null);
-            view.setLeft(0);
-        }
-
-        if (!view.getParent()) {
-            Ext.Viewport.add(view);
-        }
-
-        view.show();
+        this.view.show();
     },
 
     onDetailHideAnimationStart: function(panel) {
@@ -108,11 +94,11 @@ Ext.define('Kiva.controller.Loans', {
     },
 
     init: function(application) {
-        Ext.getStore('Loans').on({
-            scope: this,
+        Ext.getStore('Loans').on({
+            scope: this,
 
-            beforeload: this.onBeforeStoreLoad,
-            load: this.onStoreLoad
+            beforeload: this.onBeforeStoreLoad,
+            load: this.onStoreLoad
         });
     },
 
