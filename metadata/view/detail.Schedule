@@ -1,5 +1,4 @@
 {
-    "id": "ExtBox1-ext-gen8104",
     "type": "container",
     "reference": {
         "name": "items",
@@ -7,20 +6,18 @@
     },
     "codeClass": null,
     "userConfig": {
+        "designer|userClassName": "detail.Schedule",
+        "designer|userAlias": "detailSchedule",
         "cls": [
             "detail-card"
         ],
         "styleHtmlContent": true,
-        "scrollable": "vertical",
-        "designer|userClassName": "detail.Schedule",
-        "designer|userAlias": "detailSchedule"
+        "scrollable": "vertical"
     },
-    "customConfigs": [],
+    "id": "ExtBox1-ext-gen8104",
     "designerId": "9c8b4b3a-dd9d-4e9a-8c39-de58f9e6791f",
-    "$viewOrder": 2,
     "cn": [
         {
-            "id": "ExtBox1-ext-gen8614",
             "type": "basiceventbinding",
             "reference": {
                 "name": "listeners",
@@ -28,31 +25,31 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "onContainerInitialize",
                 "fn": "onContainerInitialize",
                 "implHandler": [
-                    "this.setTpl(Ext.create('Ext.XTemplate',",
-                    "            '<h1>Repayment Schedule</h1>',",
-                    "            '<tpl for=\".\">',",
-                    "                '<div class=\"payment\">',",
-                    "                    '<div>{[this.formatDueDate(values.due_date)]} <span>${amount}</span></div>',",
-                    "                '</div>',",
-                    "            '</tpl>',",
-                    "            {",
-                    "                formatDueDate: function(date) {",
-                    "                    date = date.split('T')[0];",
-                    "",
-                    "                    var format = \"j M Y\";",
-                    "                        parsed = new Date(Ext.Date.parse(date, \"Y-m-d\"));",
-                    "                    ",
-                    "                    return Ext.Date.format(parsed, format);",
-                    "                }",
-                    "            }",
-                    "        ));"
+                    "this.setTpl(Ext.create('Ext.XTemplate',\r",
+                    "'<h1>Repayment Schedule</h1>',\r",
+                    "'<tpl for=\".\">',\r",
+                    "'<div class=\"payment\">',\r",
+                    "'<div>{[this.formatDueDate(values.due_date)]} <span>${amount}</span></div>',\r",
+                    "'</div>',\r",
+                    "'</tpl>',\r",
+                    "{\r",
+                    "    formatDueDate: function(date) {\r",
+                    "        date = date.split('T')[0];\r",
+                    "\r",
+                    "        var format = \"j M Y\";\r",
+                    "        parsed = new Date(Ext.Date.parse(date, \"Y-m-d\"));\r",
+                    "\r",
+                    "        return Ext.Date.format(parsed, format);\r",
+                    "    }\r",
+                    "}\r",
+                    "));"
                 ],
-                "name": "initialize",
-                "designer|userClassName": "onContainerInitialize"
+                "name": "initialize"
             },
-            "customConfigs": []
+            "designerId": "54a0d41f-c2ba-4e78-af47-aa045203b620"
         }
     ]
 }

@@ -15,10 +15,11 @@
 
 Ext.define('Kiva.view.LoansListItemCompletion', {
     extend: 'Ext.Component',
+    alias: 'widget.loanslistitemcompletion',
 
     config: {
+        percentFunded: '0',
         width: 100,
-        percentFunded: 0,
         cls: [
             'completion'
         ]

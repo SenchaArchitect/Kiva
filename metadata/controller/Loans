@@ -1,5 +1,4 @@
 {
-    "id": "ExtBox1-ext-gen3975",
     "type": "controller",
     "reference": {
         "name": "items",
@@ -9,23 +8,20 @@
     "userConfig": {
         "designer|userClassName": "Loans"
     },
+    "configAlternates": {
+        "profile": "object"
+    },
+    "id": "ExtBox1-ext-gen3975",
+    "designerId": "518b9576-2d9d-42b6-9e14-f9107124020d",
     "customConfigs": [
         {
             "group": "(Custom Properties)",
             "name": "loan",
             "type": "object"
-        },
-        {
-            "group": "(Custom Properties)",
-            "name": "profile",
-            "type": "object"
         }
     ],
-    "designerId": "518b9576-2d9d-42b6-9e14-f9107124020d",
-    "$viewOrder": 0,
     "cn": [
         {
-            "id": "ExtBox1-ext-gen4912",
             "type": "controlleraction",
             "reference": {
                 "name": "listeners",
@@ -33,41 +29,28 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "onListTap",
                 "fn": "onListTap",
                 "implHandler": [
-                    "var list = dataview;",
-                    "var loan = record;",
-                    "",
-                    "",
-                    "if (!this.view) {",
-                    "    this.view = Ext.create('Kiva.view.Detail');",
-                    "}",
-                    "",
-                    "var view = this.view;",
-                    "view.setLoan(loan);",
-                    "",
-                    "if (this.getProfile() == \"phone\") {",
-                    "    view.setWidth(null);",
-                    "    view.setHeight('85%');",
-                    "    view.setTop(null);",
-                    "    view.setLeft(0);",
-                    "}",
-                    "",
-                    "if (!view.getParent()) {",
-                    "    Ext.Viewport.add(view);",
-                    "}",
-                    "",
-                    "view.show();"
+                    "if (!this.view) {\r",
+                    "    this.view = Ext.create('Kiva.view.Detail');\r",
+                    "}\r",
+                    "\r",
+                    "this.view.setLoan(record);\r",
+                    "\r",
+                    "if (!this.view.getParent()) {\r",
+                    "    Ext.Viewport.add(this.view);\r",
+                    "}\r",
+                    "\r",
+                    "this.view.show();"
                 ],
                 "name": "select",
-                "designer|targetType": "LoanList",
-                "designer|controlQuery": "loanlist",
-                "designer|userClassName": "onListTap"
+                "designer|targetType": "Kiva.view.LoansList",
+                "designer|controlQuery": "loanslist"
             },
-            "customConfigs": []
+            "designerId": "12a916db-8bc8-4079-84e3-380673a592d3"
         },
         {
-            "id": "ExtBox1-ext-gen5652",
             "type": "controlleraction",
             "reference": {
                 "name": "listeners",
@@ -75,6 +58,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "onDetailHideAnimationStart",
                 "fn": "onDetailHideAnimationStart",
                 "designer|params": [
                     "panel"
@@ -84,13 +68,11 @@
                 ],
                 "name": "hideanimationstart",
                 "designer|targetType": "Detail",
-                "designer|controlQuery": "detail",
-                "designer|userClassName": "onDetailHideAnimationStart"
+                "designer|controlQuery": "detail"
             },
-            "customConfigs": []
+            "designerId": "8e5e608f-98f0-4def-9592-cc31d8805a1e"
         },
         {
-            "id": "ExtBox1-ext-gen6987",
             "type": "controlleraction",
             "reference": {
                 "name": "listeners",
@@ -98,6 +80,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "onSearch",
                 "fn": "onSearch",
                 "implHandler": [
                     "var field = textfield;",
@@ -108,13 +91,11 @@
                 ],
                 "name": "action",
                 "designer|targetType": "Ext.field.Search",
-                "designer|controlQuery": "searchfield",
-                "designer|userClassName": "onSearch"
+                "designer|controlQuery": "searchfield"
             },
-            "customConfigs": []
+            "designerId": "3a3713d0-58fc-45af-b0d4-76aa57378e24"
         },
         {
-            "id": "ExtBox1-ext-gen7510",
             "type": "controlleraction",
             "reference": {
                 "name": "listeners",
@@ -122,6 +103,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "onSelectChange",
                 "fn": "onSelectChange",
                 "implHandler": [
                     "var field = selectfield;",
@@ -136,13 +118,11 @@
                 ],
                 "name": "change",
                 "designer|targetType": "Ext.field.Select",
-                "designer|controlQuery": "selectfield",
-                "designer|userClassName": "onSelectChange"
+                "designer|controlQuery": "selectfield"
             },
-            "customConfigs": []
+            "designerId": "8bff1122-08f6-4751-9e39-cdf5948629b3"
         },
         {
-            "id": "ExtBox1-ext-gen8015",
             "type": "controlleraction",
             "reference": {
                 "name": "listeners",
@@ -150,6 +130,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "onRefreshButtonTap",
                 "fn": "onRefreshButtonTap",
                 "implHandler": [
                     "var store = Ext.getStore('Loans'),",
@@ -163,13 +144,11 @@
                 ],
                 "name": "tap",
                 "designer|targetType": "Ext.Button",
-                "designer|controlQuery": "button[iconCls=refresh]",
-                "designer|userClassName": "onRefreshButtonTap"
+                "designer|controlQuery": "button[iconCls=refresh]"
             },
-            "customConfigs": []
+            "designerId": "b43f5599-4b51-452c-b914-a385f1444940"
         },
         {
-            "id": "ExtBox1-ext-gen10204",
             "type": "fixedfunction",
             "reference": {
                 "name": "items",
@@ -177,25 +156,23 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "init",
                 "fn": "init",
                 "designer|params": [
                     "application"
                 ],
                 "implHandler": [
-                    "Ext.getStore('Loans').on({",
-                    "    scope: this,",
-                    "",
-                    "    beforeload: this.onBeforeStoreLoad,",
-                    "    load: this.onStoreLoad",
+                    "Ext.getStore('Loans').on({\r",
+                    "    scope: this,\r",
+                    "\r",
+                    "    beforeload: this.onBeforeStoreLoad,\r",
+                    "    load: this.onStoreLoad\r",
                     "});"
-                ],
-                "designer|userClassName": "init"
+                ]
             },
-            "customConfigs": [],
-            "iconCls": "icon-basic-function"
+            "designerId": "11029e86-d161-4d77-a27e-e12ad2f4b343"
         },
         {
-            "id": "ExtBox1-ext-gen10536",
             "type": "basicfunction",
             "reference": {
                 "name": "items",
@@ -203,16 +180,15 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "onBeforeStoreLoad",
                 "fn": "onBeforeStoreLoad",
                 "implHandler": [
                     "this.getRefreshButton().setDisabled(true);"
-                ],
-                "designer|userClassName": "onBeforeStoreLoad"
+                ]
             },
-            "customConfigs": []
+            "designerId": "74b14912-43a9-469a-ad8e-3c451728a30a"
         },
         {
-            "id": "ExtBox1-ext-gen10861",
             "type": "basicfunction",
             "reference": {
                 "name": "items",
@@ -220,16 +196,15 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "onStoreLoad",
                 "fn": "onStoreLoad",
                 "implHandler": [
                     "this.getRefreshButton().setDisabled(false);"
-                ],
-                "designer|userClassName": "onStoreLoad"
+                ]
             },
-            "customConfigs": []
+            "designerId": "11903c06-1eb2-4ea2-8336-769bab1bb5c6"
         },
         {
-            "id": "ExtBox1-ext-gen11168",
             "type": "basicfunction",
             "reference": {
                 "name": "items",
@@ -237,6 +212,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "doFilter",
                 "fn": "doFilter",
                 "designer|params": [
                     "values"
@@ -255,13 +231,11 @@
                     "store.clearFilter();",
                     "store.filter(filters);",
                     "store.load();"
-                ],
-                "designer|userClassName": "doFilter"
+                ]
             },
-            "customConfigs": []
+            "designerId": "cb5055b0-a789-477d-bf40-c7be47142d9e"
         },
         {
-            "id": "ExtBox1-ext-gen11648",
             "type": "controllerref",
             "reference": {
                 "name": "items",
@@ -269,14 +243,13 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "main",
                 "ref": "main",
-                "selector": "mainview",
-                "designer|userClassName": "main"
+                "selector": "mainview"
             },
-            "customConfigs": []
+            "designerId": "80bb23a5-1764-43b1-b64f-40c4f88f0a4f"
         },
         {
-            "id": "ExtBox1-ext-gen11716",
             "type": "controllerref",
             "reference": {
                 "name": "items",
@@ -284,14 +257,13 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "loansList",
                 "ref": "loansList",
-                "selector": "loanlist",
-                "designer|userClassName": "loansList"
+                "selector": "loanslist"
             },
-            "customConfigs": []
+            "designerId": "d91e100c-23e5-4889-917f-45328aeb76ca"
         },
         {
-            "id": "ExtBox1-ext-gen11784",
             "type": "controllerref",
             "reference": {
                 "name": "items",
@@ -299,14 +271,13 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "loanFilter",
                 "ref": "loanFilter",
-                "selector": "loanfilter",
-                "designer|userClassName": "loanFilter"
+                "selector": "loanfilter"
             },
-            "customConfigs": []
+            "designerId": "e902551e-e360-4713-a650-e5b18aac3072"
         },
         {
-            "id": "ExtBox1-ext-gen11852",
             "type": "controllerref",
             "reference": {
                 "name": "items",
@@ -314,14 +285,13 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "searchField",
                 "ref": "searchField",
-                "selector": "searchfield",
-                "designer|userClassName": "searchField"
+                "selector": "searchfield"
             },
-            "customConfigs": []
+            "designerId": "5ed169c8-2f2e-4422-8bf5-12a54c5dd031"
         },
         {
-            "id": "ExtBox1-ext-gen11920",
             "type": "controllerref",
             "reference": {
                 "name": "items",
@@ -329,28 +299,11 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "refreshButton",
                 "ref": "refreshButton",
-                "selector": "button[iconCls=refresh]",
-                "designer|userClassName": "refreshButton"
+                "selector": "button[iconCls=refresh]"
             },
-            "customConfigs": []
-        },
-        {
-            "id": "ExtBox1-ext-gen4317",
-            "type": "object",
-            "reference": {
-                "name": "profile",
-                "type": "object"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "implHandler": [
-                    "Ext.os.deviceType.toLowerCase()"
-                ],
-                "designer|displayName": "profile",
-                "designer|userClassName": "profile"
-            },
-            "customConfigs": []
+            "designerId": "70d7c1ba-0c71-463d-9d84-0fc7be31d745"
         }
     ]
 }

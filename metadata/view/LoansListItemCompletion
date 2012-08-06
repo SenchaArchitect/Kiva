@@ -1,5 +1,4 @@
 {
-    "id": "ExtBox1-ext-gen33061",
     "type": "component",
     "reference": {
         "name": "items",
@@ -7,13 +6,16 @@
     },
     "codeClass": null,
     "userConfig": {
+        "percentFunded": "0",
+        "designer|userClassName": "LoansListItemCompletion",
+        "designer|userAlias": "loanslistitemcompletion",
         "cls": [
             "completion"
         ],
-        "width": 100,
-        "designer|userClassName": "LoansListItemCompletion",
-        "percentFunded": 0
+        "width": 100
     },
+    "id": "ExtBox1-ext-gen8241",
+    "designerId": "d7ba4374-86ed-457e-949c-4b15f5195d5a",
     "customConfigs": [
         {
             "group": "(Custom Properties)",
@@ -21,11 +23,8 @@
             "type": "string"
         }
     ],
-    "designerId": "28654942-e312-4b8d-ab80-5e12c88f0cc7",
-    "$viewOrder": 7,
     "cn": [
         {
-            "id": "ExtBox1-ext-gen33335",
             "type": "basicfunction",
             "reference": {
                 "name": "items",
@@ -33,6 +32,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "updatePercentFunded",
                 "fn": "updatePercentFunded",
                 "designer|params": [
                     "percentFunded"
@@ -41,10 +41,9 @@
                     "var html = '<div class=\"bar\" style=\"width:' + percentFunded + '%\"></div>';",
                     "",
                     "this.updateHtml(html);"
-                ],
-                "designer|userClassName": "updatePercentFunded"
+                ]
             },
-            "customConfigs": []
+            "designerId": "31bcee46-d54d-4d7e-8401-566b3350a34e"
         }
     ]
 }

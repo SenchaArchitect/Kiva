@@ -17,81 +17,51 @@ Ext.define('Kiva.view.LoansListItem', {
     extend: 'Ext.dataview.component.DataItem',
     alias: 'widget.loanslistitem',
 
+    requires: [
+        'Kiva.view.LoansListItemCompletion'
+    ],
+
     config: {
         layout: {
-            pack: 'center',
             type: 'vbox'
         },
         cls: [
             'x-list-item'
         ],
-        name: {
-            cls: 'name'
-        },
-        use: {
-            cls: 'use'
-        },
-        avatar: {
-            docked: 'left'
-        },
-        completion: {
-            docked: 'right',
-            hidden: (Ext.os.deviceType==='Phone')?true: false
-        },
-        dataMap: {
-            getName: {
-                setHtml: 'name'
+        items: [
+            {
+                xtype: 'component',
+                cls: [
+                    'name'
+                ],
+                itemId: 'name'
             },
-            getUse: {
-                setHtml: 'use'
+            {
+                xtype: 'component',
+                cls: [
+                    'use'
+                ],
+                itemId: 'use'
             },
-            getAvatar: {
-                setSrc: 'image'
+            {
+                xtype: 'image',
+                docked: 'left',
+                itemId: 'avatar'
             },
-            getCompletion: {
-                setPercentFunded: 'percent_funded'
+            {
+                xtype: 'loanslistitemcompletion',
+                docked: 'right',
+                itemId: 'completion'
             }
-        }
+        ]
     },
 
-    applyName: function(config) {
-        return Ext.factory(config, Ext.Component, this.getName());
-    },
-
-    updateName: function(newName) {
-        if (newName){
-            this.add(newName);
-        }
-    },
-
-    applyUse: function(config) {
-        return Ext.factory(config, Ext.Component, this.getUse());
-    },
-
-    updateUse: function(newUse) {
-        if (newUse) {
-            this.add(newUse);
-        }
-    },
-
-    applyAvatar: function(config) {
-        return Ext.factory(config, Ext.Img, this.getAvatar());
-    },
-
-    updateAvatar: function(newAvatar) {
-        if (newAvatar) {
-            this.add(newAvatar);
-        }
-    },
-
-    applyCompletion: function(config) {
-        return Ext.factory(config, Kiva.view.LoansListItemCompletion, this.getCompletion());
-    },
-
-    updateCompletion: function(newCompletion) {
-        if (newCompletion) {
-            this.add(newCompletion);
-        }
+    updateRecord: function(record) {
+        // Provide an implementation to update this container's child items
+        this.down('#name').setHtml(record.get('name'));
+        this.down('#use').setHtml(record.get('use'));
+        this.down('#avatar').setSrc(record.get('image'));
+        this.down('#completion').setPercentFunded(record.get('percent_funded'));
     }
 
 });

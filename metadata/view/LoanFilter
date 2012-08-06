@@ -1,5 +1,4 @@
 {
-    "id": "ExtBox1-ext-gen15006",
     "type": "container",
     "reference": {
         "name": "items",
@@ -10,12 +9,10 @@
         "designer|userClassName": "LoanFilter",
         "designer|userAlias": "loanfilter"
     },
-    "customConfigs": [],
+    "id": "ExtBox1-ext-gen15006",
     "designerId": "db753b0c-c712-4149-bb62-862860e75414",
-    "$viewOrder": 4,
     "cn": [
         {
-            "id": "ExtBox1-ext-gen15276",
             "type": "toolbar",
             "reference": {
                 "name": "items",
@@ -23,15 +20,14 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "MyToolbar",
                 "docked": "top",
                 "ui": "green",
-                "title": "Kiva",
-                "designer|userClassName": "MyToolbar"
+                "title": "Kiva"
             },
-            "customConfigs": [],
+            "designerId": "b7eaa3a5-806e-4b60-a94a-14cffbd3c818",
             "cn": [
                 {
-                    "id": "ExtBox1-ext-gen18250",
                     "type": "spacer",
                     "reference": {
                         "name": "items",
@@ -41,10 +37,9 @@
                     "userConfig": {
                         "designer|userClassName": "MySpacer"
                     },
-                    "customConfigs": []
+                    "designerId": "90865134-ba28-4e5c-96cf-a8d70a493225"
                 },
                 {
-                    "id": "ExtBox1-ext-gen16857",
                     "type": "button",
                     "reference": {
                         "name": "items",
@@ -52,17 +47,16 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "designer|userClassName": "MyButton1",
                         "iconCls": "refresh",
                         "iconMask": true,
-                        "text": null,
-                        "designer|userClassName": "MyButton1"
+                        "text": null
                     },
-                    "customConfigs": []
+                    "designerId": "cfcf8ad4-c400-4567-9702-9554fa7468a7"
                 }
             ]
         },
         {
-            "id": "ExtBox1-ext-gen15449",
             "type": "toolbar",
             "reference": {
                 "name": "items",
@@ -70,14 +64,13 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "MyToolbar1",
                 "docked": "top",
-                "ui": "gray",
-                "designer|userClassName": "MyToolbar1"
+                "ui": "gray"
             },
-            "customConfigs": [],
+            "designerId": "526d5350-1981-48a3-b863-84760390e91b",
             "cn": [
                 {
-                    "id": "ExtBox1-ext-gen18918",
                     "type": "selectfield",
                     "reference": {
                         "name": "items",
@@ -85,15 +78,14 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "designer|userClassName": "MySelectField",
                         "label": null,
                         "name": "gender",
-                        "options": "[\n{text:'Both', value:'both'}, \n{text:'Male',\nvalue:'male'},\n{text:'Female',\nvalue:'female'}\n]\n",
-                        "designer|userClassName": "MySelectField"
+                        "options": "[\n{text:'Both', value:'both'}, \n{text:'Male',\nvalue:'male'},\n{text:'Female',\nvalue:'female'}\n]\n"
                     },
-                    "customConfigs": []
+                    "designerId": "5a44354f-811e-4da2-87c4-85f02cad0136"
                 },
                 {
-                    "id": "ExtBox1-ext-gen19354",
                     "type": "selectfield",
                     "reference": {
                         "name": "items",
@@ -101,15 +93,14 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "designer|userClassName": "MySelectField1",
                         "label": null,
                         "name": "sector",
-                        "options": "[\n                            {text: 'All',            value: ''},\n                            {text: 'Agriculture',    value: 'agriculture'},\n                            {text: 'Transportation', value: 'transportation'},\n                            {text: 'Services',       value: 'services'},\n                            {text: 'Clothing',       value: 'clothing'},\n                            {text: 'Health',         value: 'health'},\n                            {text: 'Retail',         value: 'retail'},\n                            {text: 'Manufacturing',  value: 'manufacturing'},\n                            {text: 'Arts',           value: 'arts'},\n                            {text: 'Housing',        value: 'housing'},\n                            {text: 'Food',           value: 'food'},\n                            {text: 'Wholesale',      value: 'wholesale'},\n                            {text: 'Construction',   value: 'construction'},\n                            {text: 'Education',      value: 'education'},\n                            {text: 'Personal Use',   value: 'personal'},\n                            {text: 'Entertainment',  value: 'entertainment'},\n                            {text: 'Green',          value: 'green'}\n                        ]",
-                        "designer|userClassName": "MySelectField1"
+                        "options": "[\n                            {text: 'All',            value: ''},\n                            {text: 'Agriculture',    value: 'agriculture'},\n                            {text: 'Transportation', value: 'transportation'},\n                            {text: 'Services',       value: 'services'},\n                            {text: 'Clothing',       value: 'clothing'},\n                            {text: 'Health',         value: 'health'},\n                            {text: 'Retail',         value: 'retail'},\n                            {text: 'Manufacturing',  value: 'manufacturing'},\n                            {text: 'Arts',           value: 'arts'},\n                            {text: 'Housing',        value: 'housing'},\n                            {text: 'Food',           value: 'food'},\n                            {text: 'Wholesale',      value: 'wholesale'},\n                            {text: 'Construction',   value: 'construction'},\n                            {text: 'Education',      value: 'education'},\n                            {text: 'Personal Use',   value: 'personal'},\n                            {text: 'Entertainment',  value: 'entertainment'},\n                            {text: 'Green',          value: 'green'}\n                        ]"
                     },
-                    "customConfigs": []
+                    "designerId": "f5b31970-b6e1-46e3-8e77-106cd5bd8736"
                 },
                 {
-                    "id": "ExtBox1-ext-gen19671",
                     "type": "selectfield",
                     "reference": {
                         "name": "items",
@@ -117,15 +108,14 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "designer|userClassName": "MySelectField2",
                         "label": null,
                         "name": "sort_by",
-                        "options": " [\n                            {text: 'Newest',           value: 'newest'},\n                            {text: 'Oldest',           value: 'oldest'},\n                            {text: 'Expiring',         value: 'expiration'},\n                            {text: 'Amount Remaining', value: 'amount_remaining'},\n                            {text: 'Popularity',       value: 'popularity'},\n                            {text: 'Loan Amount',      value: 'loan_amount'}\n                        ]",
-                        "designer|userClassName": "MySelectField2"
+                        "options": " [\n                            {text: 'Newest',           value: 'newest'},\n                            {text: 'Oldest',           value: 'oldest'},\n                            {text: 'Expiring',         value: 'expiration'},\n                            {text: 'Amount Remaining', value: 'amount_remaining'},\n                            {text: 'Popularity',       value: 'popularity'},\n                            {text: 'Loan Amount',      value: 'loan_amount'}\n                        ]"
                     },
-                    "customConfigs": []
+                    "designerId": "7d664d45-0768-4ea5-8d3a-495bd20a2b2b"
                 },
                 {
-                    "id": "ExtBox1-ext-gen20026",
                     "type": "spacer",
                     "reference": {
                         "name": "items",
@@ -135,10 +125,9 @@
                     "userConfig": {
                         "designer|userClassName": "MySpacer1"
                     },
-                    "customConfigs": []
+                    "designerId": "3156c3f4-991b-4ed6-8280-297cafcdcd38"
                 },
                 {
-                    "id": "ExtBox1-ext-gen20176",
                     "type": "searchfield",
                     "reference": {
                         "name": "items",
@@ -146,15 +135,14 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "label": null,
-                        "designer|userClassName": "MySearchField"
+                        "designer|userClassName": "MySearchField",
+                        "label": null
                     },
-                    "customConfigs": []
+                    "designerId": "8f646e51-c01e-4ecc-83a3-33455d035a4a"
                 }
             ]
         },
         {
-            "id": "ExtBox1-ext-gen20501",
             "type": "basicfunction",
             "reference": {
                 "name": "items",
@@ -162,19 +150,18 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "onFieldChange",
                 "fn": "onFieldChange",
                 "designer|params": [
                     "comp, value"
                 ],
                 "implHandler": [
                     "this.fireAction('filter', this.getValues(), this);"
-                ],
-                "designer|userClassName": "onFieldChange"
+                ]
             },
-            "customConfigs": []
+            "designerId": "c779cab0-3282-40d7-bef9-44051a7218e1"
         },
         {
-            "id": "ExtBox1-ext-gen20985",
             "type": "basiceventbinding",
             "reference": {
                 "name": "listeners",
@@ -182,6 +169,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "onContainerInitialize",
                 "fn": "onContainerInitialize",
                 "implHandler": [
                     "if (Ext.os.deviceType === 'Phone'){",
@@ -190,10 +178,9 @@
                     "    ]);",
                     "}"
                 ],
-                "name": "initialize",
-                "designer|userClassName": "onContainerInitialize"
+                "name": "initialize"
             },
-            "customConfigs": []
+            "designerId": "9ac95a3d-cd90-4744-ab5c-10a149238d66"
         }
     ]
 }

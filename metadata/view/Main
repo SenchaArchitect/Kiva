@@ -1,5 +1,4 @@
 {
-    "id": "ExtBox1-ext-gen34349",
     "type": "container",
     "reference": {
         "name": "items",
@@ -7,17 +6,15 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|initialView": true,
-        "layout": "fit",
         "designer|userClassName": "Main",
-        "designer|userAlias": "mainview"
+        "designer|userAlias": "mainview",
+        "designer|initialView": true,
+        "layout": "fit"
     },
-    "customConfigs": [],
+    "id": "ExtBox1-ext-gen34349",
     "designerId": "2f116102-9fd6-4bfc-8755-92a2de790577",
-    "$viewOrder": 8,
     "cn": [
         {
-            "id": "ExtBox1-ext-gen34716",
             "type": "linkedinstance",
             "reference": {
                 "name": "items",
@@ -28,12 +25,10 @@
                 "designer|displayName": "loanfilter",
                 "docked": "top"
             },
-            "customConfigs": [],
-            "iconCls": "icon-linkedinstance",
+            "designerId": "84d9a8b9-dbcc-4655-b6db-f76d1a21b11b",
             "masterInstanceId": "ExtBox1-ext-gen15006"
         },
         {
-            "id": "ExtBox1-ext-gen35468",
             "type": "linkedinstance",
             "reference": {
                 "name": "items",
@@ -44,8 +39,7 @@
                 "designer|displayName": "loanlist",
                 "layout": null
             },
-            "customConfigs": [],
-            "iconCls": "icon-linkedinstance",
+            "designerId": "25891ede-502a-454d-b303-09da01d87b47",
             "masterInstanceId": "ExtBox1-ext-gen22945"
         }
     ]
