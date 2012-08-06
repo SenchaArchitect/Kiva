@@ -6,180 +6,106 @@
     },
     "codeClass": null,
     "userConfig": {
+        "container|align": null,
         "designer|userClassName": "LoansListItem",
         "designer|userAlias": "loanslistitem",
+        "cls": [
+            "x-list-item"
+        ],
         "padding": null,
-        "layout": null
+        "layout": "vbox"
     },
     "id": "ExtBox1-ext-gen25936",
     "designerId": "7e648599-3519-4afa-8f50-1bcedb811d75",
     "cn": [
         {
-            "type": "basicfunction",
+            "type": "component",
             "reference": {
                 "name": "items",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "applyName",
-                "fn": "applyName",
-                "designer|params": [
-                    "config"
+                "designer|userClassName": "MyComponent1",
+                "designer|displayName": "name",
+                "cls": [
+                    "name"
                 ],
-                "implHandler": [
-                    "return Ext.factory(config, Ext.Component, this.getName());"
-                ]
+                "itemId": "name"
             },
-            "designerId": "c9e3d814-9d0d-42f9-9dbb-3364dd9894e3"
+            "designerId": "13924b6f-8151-485c-b698-cafe04034a4e"
         },
         {
-            "type": "basicfunction",
+            "type": "component",
             "reference": {
                 "name": "items",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "updateName",
-                "fn": "updateName",
-                "designer|params": [
-                    "newName"
+                "designer|userClassName": "MyComponent2",
+                "designer|displayName": "use",
+                "cls": [
+                    "use"
                 ],
-                "implHandler": [
-                    "if (newName){",
-                    "    this.add(newName);",
-                    "}"
-                ]
+                "itemId": "use"
             },
-            "designerId": "c94113bf-8164-4332-85f5-b4055ae6cd1b"
+            "designerId": "c7d5cb92-3e42-414b-8b63-31ca3559bbfc"
         },
         {
-            "type": "basicfunction",
+            "type": "image",
             "reference": {
                 "name": "items",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "applyUse",
-                "fn": "applyUse",
-                "designer|params": [
-                    "config"
-                ],
-                "implHandler": [
-                    "return Ext.factory(config, Ext.Component, this.getUse());"
-                ]
+                "designer|userClassName": "MyImage",
+                "designer|displayName": "avatar",
+                "docked": "left",
+                "height": null,
+                "itemId": "avatar",
+                "width": null
             },
-            "designerId": "3ac4b038-4f2d-42d4-9f17-c69ed03f1137"
+            "designerId": "b71c7c5f-b05d-4133-81e0-c743daf4d3ac"
         },
         {
-            "type": "basicfunction",
+            "type": "linkedinstance",
             "reference": {
                 "name": "items",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "updateUse",
-                "fn": "updateUse",
-                "designer|params": [
-                    "newUse"
-                ],
-                "implHandler": [
-                    "if (newUse) {",
-                    "    this.add(newUse);",
-                    "}"
-                ]
+                "designer|displayName": "completion",
+                "docked": "right",
+                "itemId": "completion"
             },
-            "designerId": "9b948c95-777d-482d-8d32-d602a9f08da0"
+            "designerId": "16b6cdff-1677-4bdb-a958-700c7318e076",
+            "masterInstanceId": "ExtBox1-ext-gen8241"
         },
         {
-            "type": "basicfunction",
+            "type": "fixedfunction",
             "reference": {
                 "name": "items",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "applyAvatar",
-                "fn": "applyAvatar",
+                "designer|userClassName": "updateRecord",
+                "fn": "updateRecord",
                 "designer|params": [
-                    "config"
+                    "record"
                 ],
                 "implHandler": [
-                    "return Ext.factory(config, Ext.Img, this.getAvatar());"
+                    "// Provide an implementation to update this container's child items\r",
+                    "this.down('#name').setHtml(record.get('name'));\r",
+                    "this.down('#use').setHtml(record.get('use'));\r",
+                    "this.down('#avatar').setSrc(record.get('image'));\r",
+                    "this.down('#completion').setPercentFunded(record.get('percent_funded'));"
                 ]
             },
-            "designerId": "4effabc8-22e5-4729-b46d-fbcc4f5b0524"
-        },
-        {
-            "type": "basicfunction",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "designer|userClassName": "updateAvatar",
-                "fn": "updateAvatar",
-                "designer|params": [
-                    "newAvatar"
-                ],
-                "implHandler": [
-                    "if (newAvatar) {",
-                    "    this.add(newAvatar);",
-                    "}"
-                ]
-            },
-            "designerId": "8eb9e400-8208-449a-b057-54bcb55bdf29"
-        },
-        {
-            "type": "basicfunction",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "designer|userClassName": "applyCompletion",
-                "fn": "applyCompletion",
-                "designer|params": [
-                    "config"
-                ],
-                "implHandler": [
-                    "return Ext.factory(config, Kiva.view.LoansListItemCompletion, this.getCompletion());"
-                ]
-            },
-            "designerId": "2d7bf9a8-0c84-425c-953d-607ce6f98d69"
-        },
-        {
-            "type": "basicfunction",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "designer|userClassName": "updateCompletion",
-                "fn": "updateCompletion",
-                "designer|params": [
-                    "newCompletion"
-                ],
-                "implHandler": [
-                    "if (newCompletion) {",
-                    "    this.add(newCompletion);",
-                    "}"
-                ]
-            },
-            "designerId": "9d652ac4-ab4e-4f5f-acfa-008b3ca77f3a",
-            "customConfigs": [
-                {
-                    "group": "(Custom Properties)",
-                    "name": "dataMap",
-                    "type": "object"
-                }
-            ]
+            "designerId": "a5e2d44c-897a-4b7d-b31f-7f97895317b7"
         }
     ]
 }

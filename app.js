@@ -36,8 +36,8 @@ Ext.application({
         'LoanFilter',
         'LoansList',
         'LoansListItem',
-        'LoansListItemCompletion',
-        'Main'
+        'Main',
+        'LoansListItemCompletion'
     ],
     name: 'Kiva',
     controllers: [

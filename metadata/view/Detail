@@ -6,9 +6,6 @@
     },
     "codeClass": null,
     "userConfig": {
-        "loan": [
-            "{}"
-        ],
         "designer|userClassName": "Detail",
         "designer|userAlias": "detail",
         "bottom": 0,
@@ -25,13 +22,6 @@
     },
     "id": "ExtBox1-ext-gen9316",
     "designerId": "502e7c24-8ce7-4387-8bd0-7c7b3aeeeedc",
-    "customConfigs": [
-        {
-            "group": "(Custom Properties)",
-            "name": "loan",
-            "type": "string"
-        }
-    ],
     "cn": [
         {
             "type": "basiceventbinding",
@@ -150,33 +140,33 @@
                     "newLoan"
                 ],
                 "implHandler": [
-                    "var carousel = this.down('carousel'),",
-                    "    information = this.down('detailInformation'),",
-                    "    payments = this.down('detailSchedule'),",
-                    "    map = this.down('detailMap'),",
-                    "    coords = newLoan.get('location').geo.pairs.split(' ').map(parseFloat);",
-                    "",
-                    "information.setData(newLoan.data);",
-                    "payments.setData(newLoan.data.terms.scheduled_payments);",
-                    "",
-                    "//update the lend button",
-                    "this.updateLendButton();",
-                    "",
-                    "//update the map",
-                    "if (this.mapMarker) {",
-                    "    this.mapMarker.setMap(null);",
-                    "    delete this.mapMarker;",
-                    "}",
-                    "",
-                    "//add a marker for the Loanee's position on the map",
-                    "this.mapMarker = new google.maps.Marker({",
-                    "    map: map.map,",
-                    "    title : newLoan.get('name'),",
-                    "    position: new google.maps.LatLng(coords[0], coords[1])",
-                    "});",
-                    "",
-                    "carousel.setActiveItem(0);",
-                    "",
+                    "var carousel = this.down('carousel'),\r",
+                    "    information = this.down('detailInformation'),\r",
+                    "    payments = this.down('detailSchedule'),\r",
+                    "    map = this.down('detailMap'),\r",
+                    "    coords = newLoan.get('location').geo.pairs.split(' ').map(parseFloat);\r",
+                    "\r",
+                    "information.setData(newLoan.data);\r",
+                    "payments.setData(newLoan.data.terms.scheduled_payments);\r",
+                    "\r",
+                    "//update the lend button\r",
+                    "this.updateLendButton();\r",
+                    "\r",
+                    "//update the map\r",
+                    "if (this.mapMarker) {\r",
+                    "    this.mapMarker.setMap(null);\r",
+                    "    delete this.mapMarker;\r",
+                    "}\r",
+                    "\r",
+                    "//add a marker for the Loanee's position on the map\r",
+                    "this.mapMarker = new google.maps.Marker({\r",
+                    "    map: map.map,\r",
+                    "    title : newLoan.get('name'),\r",
+                    "    position: new google.maps.LatLng(coords[0], coords[1])\r",
+                    "});\r",
+                    "\r",
+                    "carousel.setActiveItem(0);\r",
+                    "\r",
                     "map.setMapCenter(this.mapMarker.position);"
                 ]
             },
@@ -190,33 +180,91 @@
             },
             "codeClass": null,
             "userConfig": {
+                "loan": [
+                    "{}"
+                ],
                 "designer|userClassName": "updateLendButton",
                 "fn": "updateLendButton",
                 "implHandler": [
-                    "",
-                    "var url    = \"http://www.kiva.org/lend/\" + this.getLoan().getId(),",
-                    "    button = this.down('button');",
-                    "button.on('tap', function(){",
-                    "    window.open(url);",
-                    "});",
-                    "",
-                    "/*",
-                    "    ",
-                    "    link = Ext.getDom('linker'),",
-                    "    clickEvent = document.createEvent('Event');",
-                    "",
-                    "",
-                    "http://www.sencha.com/forum/showthread.php?130358-window.open()-from-toolbar-button-opens-window-from-list-item-a-new-tab&p=639938#post639938",
-                    "",
-                    "clickEvent.initEvent('click', true, false);",
-                    "",
-                    "button.setHandler(function() {",
-                    "    link.href = url;",
-                    "    link.dispatchEvent(clickEvent);",
+                    "\r",
+                    "var url    = \"http://www.kiva.org/lend/\" + this.getLoan().getId(),\r",
+                    "    button = this.down('button');\r",
+                    "button.on('tap', function(){\r",
+                    "    window.open(url);\r",
+                    "});\r",
+                    "\r",
+                    "/*\r",
+                    "\r",
+                    "link = Ext.getDom('linker'),\r",
+                    "clickEvent = document.createEvent('Event');\r",
+                    "\r",
+                    "\r",
+                    "http://www.sencha.com/forum/showthread.php?130358-window.open()-from-toolbar-button-opens-window-from-list-item-a-new-tab&p=639938#post639938\r",
+                    "\r",
+                    "clickEvent.initEvent('click', true, false);\r",
+                    "\r",
+                    "button.setHandler(function() {\r",
+                    "link.href = url;\r",
+                    "link.dispatchEvent(clickEvent);\r",
                     "});*/"
                 ]
             },
-            "designerId": "25d3a9da-80f5-4169-89b3-b6ca0f63b8eb"
+            "configAlternates": {
+                "loan": "object"
+            },
+            "designerId": "25d3a9da-80f5-4169-89b3-b6ca0f63b8eb",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "loan",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "setLoan",
+                "fn": "setLoan",
+                "designer|params": [
+                    "loan"
+                ],
+                "implHandler": [
+                    "// Create setter and getter by hand - workaround for inabilty to set 'loan: null' in config\r",
+                    "this.loan = loan;\r",
+                    "\r",
+                    "if (typeof this.loan !== 'undefined') {\r",
+                    "    this.updateLoan(this.loan);\r",
+                    "}\r",
+                    ""
+                ]
+            },
+            "designerId": "87bde2e1-315d-4688-bab5-70da86884e30"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "getLoan",
+                "fn": "getLoan",
+                "implHandler": [
+                    "if (!this.loan) {\r",
+                    "    this.loan = null;\r",
+                    "}\r",
+                    "\r",
+                    "return this.loan;"
+                ]
+            },
+            "designerId": "5ac0fce9-fe95-4a68-b1b4-d230d1fd4a08"
         }
     ]
 }

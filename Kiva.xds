@@ -1,10 +1,10 @@
 {
     "name": "Kiva",
     "settings": {
-        "urlPrefix": "",
+        "urlPrefix": "http://localhost/Code/sample-apps/Kiva",
         "spacesToIndent": 4,
         "exportPath": "",
-        "lineEnding": "LF",
+        "lineEnding": "CRLF",
         "genTimestamps": false,
         "cacheBust": false,
         "codeGenFormat": "Class",
@@ -76,14 +76,6 @@
             ],
             "className": "LoansListItem"
         },
-        "28654942-e312-4b8d-ab80-5e12c88f0cc7": {
-            "paths": [
-                "metadata/view/LoansListItemCompletion",
-                "app/view/override/LoansListItemCompletion.js",
-                "app/view/LoansListItemCompletion.js"
-            ],
-            "className": "LoansListItemCompletion"
-        },
         "2f116102-9fd6-4bfc-8755-92a2de790577": {
             "paths": [
                 "metadata/view/Main",
@@ -139,6 +131,14 @@
                 "metadata/resource/GoogleMapsAPI"
             ],
             "className": "GoogleMapsAPI"
+        },
+        "d7ba4374-86ed-457e-949c-4b15f5195d5a": {
+            "paths": [
+                "metadata/view/LoansListItemCompletion",
+                "app/view/override/LoansListItemCompletion.js",
+                "app/view/LoansListItemCompletion.js"
+            ],
+            "className": "LoansListItemCompletion"
         }
     },
     "viewOrderMap": {
@@ -150,8 +150,8 @@
             "db753b0c-c712-4149-bb62-862860e75414",
             "40c12b1f-2659-4c24-bad6-6672d4d0b90b",
             "7e648599-3519-4afa-8f50-1bcedb811d75",
-            "28654942-e312-4b8d-ab80-5e12c88f0cc7",
-            "2f116102-9fd6-4bfc-8755-92a2de790577"
+            "2f116102-9fd6-4bfc-8755-92a2de790577",
+            "d7ba4374-86ed-457e-949c-4b15f5195d5a"
         ],
         "store": [
             "e1cb338e-dac7-4fbc-ab0d-2e7c0a7a112e"

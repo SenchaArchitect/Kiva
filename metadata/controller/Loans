@@ -31,35 +31,22 @@
             "userConfig": {
                 "designer|userClassName": "onListTap",
                 "fn": "onListTap",
-                "designer|params": [
-                    "list",
-                    "loan",
-                    "options"
-                ],
                 "implHandler": [
-                    "if (!this.view) {",
-                    "    this.view = Ext.create('Kiva.view.Detail');",
-                    "}",
-                    "",
-                    "var view = this.view;",
-                    "view.setLoan(loan);",
-                    "",
-                    "if (this.getProfile() == \"phone\") {",
-                    "    view.setWidth(null);",
-                    "    view.setHeight('85%');",
-                    "    view.setTop(null);",
-                    "    view.setLeft(0);",
-                    "}",
-                    "",
-                    "if (!view.getParent()) {",
-                    "    Ext.Viewport.add(view);",
-                    "}",
-                    "",
-                    "view.show();"
+                    "if (!this.view) {\r",
+                    "    this.view = Ext.create('Kiva.view.Detail');\r",
+                    "}\r",
+                    "\r",
+                    "this.view.setLoan(record);\r",
+                    "\r",
+                    "if (!this.view.getParent()) {\r",
+                    "    Ext.Viewport.add(this.view);\r",
+                    "}\r",
+                    "\r",
+                    "this.view.show();"
                 ],
                 "name": "select",
-                "designer|targetType": "LoanList",
-                "designer|controlQuery": "loanlist"
+                "designer|targetType": "Kiva.view.LoansList",
+                "designer|controlQuery": "loanslist"
             },
             "designerId": "12a916db-8bc8-4079-84e3-380673a592d3"
         },
@@ -175,11 +162,11 @@
                     "application"
                 ],
                 "implHandler": [
-                    "Ext.getStore('Loans').on({",
-                    "    scope: this,",
-                    "",
-                    "    beforeload: this.onBeforeStoreLoad,",
-                    "    load: this.onStoreLoad",
+                    "Ext.getStore('Loans').on({\r",
+                    "    scope: this,\r",
+                    "\r",
+                    "    beforeload: this.onBeforeStoreLoad,\r",
+                    "    load: this.onStoreLoad\r",
                     "});"
                 ]
             },
@@ -272,7 +259,7 @@
             "userConfig": {
                 "designer|userClassName": "loansList",
                 "ref": "loansList",
-                "selector": "loanlist"
+                "selector": "loanslist"
             },
             "designerId": "d91e100c-23e5-4889-917f-45328aeb76ca"
         },

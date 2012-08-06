@@ -18,50 +18,50 @@ Ext.define('Kiva.view.LoansListItem', {
     alias: 'widget.loanslistitem',
 
     requires: [
-        'Kiva.view.override.LoansListItem'
+        'Kiva.view.LoansListItemCompletion'
     ],
 
     config: {
+        layout: {
+            type: 'vbox'
+        },
+        cls: [
+            'x-list-item'
+        ],
+        items: [
+            {
+                xtype: 'component',
+                cls: [
+                    'name'
+                ],
+                itemId: 'name'
+            },
+            {
+                xtype: 'component',
+                cls: [
+                    'use'
+                ],
+                itemId: 'use'
+            },
+            {
+                xtype: 'image',
+                docked: 'left',
+                itemId: 'avatar'
+            },
+            {
+                xtype: 'loanslistitemcompletion',
+                docked: 'right',
+                itemId: 'completion'
+            }
+        ]
     },
 
-    applyName: function(config) {
-        return Ext.factory(config, Ext.Component, this.getName());
-    },
-
-    updateName: function(newName) {
-        if (newName){
-            this.add(newName);
-        }
-    },
-
-    applyUse: function(config) {
-        return Ext.factory(config, Ext.Component, this.getUse());
-    },
-
-    updateUse: function(newUse) {
-        if (newUse) {
-            this.add(newUse);
-        }
-    },
-
-    applyAvatar: function(config) {
-        return Ext.factory(config, Ext.Img, this.getAvatar());
-    },
-
-    updateAvatar: function(newAvatar) {
-        if (newAvatar) {
-            this.add(newAvatar);
-        }
-    },
-
-    applyCompletion: function(config) {
-        return Ext.factory(config, Kiva.view.LoansListItemCompletion, this.getCompletion());
-    },
-
-    updateCompletion: function(newCompletion) {
-        if (newCompletion) {
-            this.add(newCompletion);
-        }
+    updateRecord: function(record) {
+        // Provide an implementation to update this container's child items
+        this.down('#name').setHtml(record.get('name'));
+        this.down('#use').setHtml(record.get('use'));
+        this.down('#avatar').setSrc(record.get('image'));
+        this.down('#completion').setPercentFunded(record.get('percent_funded'));
     }
 
 });

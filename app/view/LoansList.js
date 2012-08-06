@@ -18,12 +18,14 @@ Ext.define('Kiva.view.LoansList', {
     alias: 'widget.loanslist',
 
     config: {
-        refreshed: false,
         ui: 'loans',
         defaultType: 'loanslistitem',
         deselectOnContainerClick: false,
         store: 'Loans',
-        useComponents: true
+        useComponents: true,
+        refreshed: [
+            '["[\\"false\\"]"]'
+        ]
     },
 
     onLoad: function() {
