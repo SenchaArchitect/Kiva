@@ -4,6 +4,7 @@
         "urlPrefix": "http://localhost/Code/sample-apps/Kiva",
         "spacesToIndent": 4,
         "exportPath": "",
+        "sdkPath": "",
         "lineEnding": "CRLF",
         "genTimestamps": false,
         "cacheBust": false,
@@ -14,10 +15,10 @@
         "saveOnDeploy": false,
         "appName": "MyApp"
     },
-    "xdsVersion": "2.0.0",
-    "xdsBuild": 557,
+    "xdsVersion": "2.1.0",
+    "xdsBuild": 670,
     "schemaVersion": 1,
-    "upgradeVersion": 210000000495,
+    "upgradeVersion": 210000000498,
     "framework": "touch20",
     "topInstanceFileMap": {
         "513759c1-12e2-4a8a-b5b8-6051975b79d7": {
