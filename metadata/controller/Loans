@@ -31,6 +31,10 @@
             "userConfig": {
                 "designer|userClassName": "onListTap",
                 "fn": "onListTap",
+                "designer|params": [
+                    "dv",
+                    "record"
+                ],
                 "implHandler": [
                     "if (!this.view) {\r",
                     "    this.view = Ext.create('Kiva.view.Detail');\r",
