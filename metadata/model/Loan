@@ -174,8 +174,8 @@
             "codeClass": null,
             "userConfig": {
                 "designer|userClassName": "MyField11",
-                "mapping": "description.texts.en",
                 "name": "description",
+                "mapping": "description.texts.en",
                 "type": "string"
             },
             "designerId": "fd5ad9ef-a805-4c97-bf70-7fd8109afd98"
@@ -189,8 +189,8 @@
             "codeClass": null,
             "userConfig": {
                 "designer|userClassName": "MyField12",
-                "mapping": "image.id",
                 "name": "image",
+                "mapping": "image.id",
                 "type": "string"
             },
             "designerId": "bdd0707e-af90-4230-a272-0ab213dc2d40",
