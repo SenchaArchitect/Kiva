@@ -1,14 +1,11 @@
 {
-    "type": "application",
+    "type": "Ext.app.Application",
     "reference": {
         "name": "items",
         "type": "array"
     },
     "codeClass": null,
     "userConfig": {
-        "requires": [
-            "Ext.data.proxy.Kiva"
-        ],
         "models": [
             "Loan"
         ],
@@ -26,11 +23,13 @@
             "Main",
             "LoansListItemCompletion"
         ],
-        "name": "Kiva",
+        "requires": [
+            "Ext.data.proxy.Kiva"
+        ],
         "controllers": [
             "Loans"
-        ]
+        ],
+        "name": "Kiva"
     },
-    "id": "ExtBox1-ext-gen2211",
     "designerId": "application"
 }

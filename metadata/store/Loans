@@ -1,17 +1,16 @@
 {
-    "type": "store",
+    "type": "Ext.data.Store",
     "reference": {
         "name": "items",
         "type": "array"
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "Loans",
         "autoLoad": null,
         "model": "Loan",
         "remoteFilter": null,
-        "storeId": "Loans"
+        "storeId": "Loans",
+        "designer|userClassName": "Loans"
     },
-    "id": "ExtBox1-ext-gen6836",
     "designerId": "e1cb338e-dac7-4fbc-ab0d-2e7c0a7a112e"
 }
