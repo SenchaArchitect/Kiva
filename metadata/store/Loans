@@ -6,11 +6,43 @@
     },
     "codeClass": null,
     "userConfig": {
-        "autoLoad": null,
+        "autoLoad": true,
         "model": "Loan",
         "remoteFilter": null,
         "storeId": "Loans",
         "designer|userClassName": "Loans"
     },
-    "designerId": "e1cb338e-dac7-4fbc-ab0d-2e7c0a7a112e"
+    "designerId": "e1cb338e-dac7-4fbc-ab0d-2e7c0a7a112e",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.JsonP",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyJsonPProxy",
+                "designer|displayName": "KivaProxy",
+                "designer|createAlias": "kiva"
+            },
+            "designerId": "f26128e4-63e6-46d1-99ff-a725e0e7ab63",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "rootProperty": "query.results.loans",
+                        "designer|userClassName": "MyJsonReader",
+                        "designer|displayName": "KivaReader"
+                    },
+                    "designerId": "4880a843-f51e-4e59-b37f-58f3f0c1765f"
+                }
+            ]
+        }
+    ]
 }

@@ -19,6 +19,71 @@ Ext.define('Kiva.model.Loan', {
     config: {
         fields: [
             {
+                name: 'name',
+                type: 'string'
+            },
+            {
+                name: 'status',
+                type: 'string'
+            },
+            {
+                name: 'loan_amount',
+                type: 'int'
+            },
+            {
+                name: 'funded_amount',
+                type: 'int'
+            },
+            {
+                name: 'basket_amount',
+                type: 'int'
+            },
+            {
+                name: 'borrower_count',
+                type: 'int'
+            },
+            {
+                name: 'activity',
+                type: 'string'
+            },
+            {
+                name: 'sector',
+                type: 'string'
+            },
+            {
+                name: 'use',
+                type: 'string'
+            },
+            {
+                name: 'partner_id',
+                type: 'int'
+            },
+            {
+                mapping: 'description.texts.en',
+                name: 'description',
+                type: 'string'
+            },
+            {
+                convert: function(v, rec) {
+                    return "http://kiva.org/img/w80h80/" + v + ".jpg";
+                },
+                mapping: 'image.id',
+                name: 'image',
+                type: 'string'
+            },
+            {
+                convert: function(v, rec) {
+                    return parseInt(rec.data.funded_amount / rec.data.loan_amount * 100, 10);
+                },
+                name: 'percent_funded'
+            },
+            {
+                name: 'terms'
+            },
+            {
+                name: 'location'
+            },
+            {
                 name: 'id',
                 type: 'int'
             },

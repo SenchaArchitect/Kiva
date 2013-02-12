@@ -17,12 +17,19 @@ Ext.define('Kiva.store.Loans', {
     extend: 'Ext.data.Store',
 
     requires: [
-        'Kiva.store.override.Loans',
         'Kiva.model.Loan'
     ],
 
     config: {
+        autoLoad: true,
         model: 'Kiva.model.Loan',
-        storeId: 'Loans'
+        storeId: 'Loans',
+        proxy: {
+            type: 'kiva',
+            reader: {
+                type: 'json',
+                rootProperty: 'query.results.loans'
+            }
+        }
     }
 });
