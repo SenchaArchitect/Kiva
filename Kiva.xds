@@ -1,7 +1,7 @@
 {
     "name": "Kiva",
     "settings": {
-        "urlPrefix": "http://localhost/Kiva/",
+        "urlPrefix": "http://localhost/sandbox/Kiva/",
         "spacesToIndent": 4,
         "exportPath": "",
         "sdkPath": "",
@@ -15,10 +15,10 @@
         "saveOnDeploy": false,
         "appName": "MyApp"
     },
-    "xdsVersion": "2.1.0",
-    "xdsBuild": 670,
+    "xdsVersion": "2.2.0",
+    "xdsBuild": 0,
     "schemaVersion": 1,
-    "upgradeVersion": 210000000498,
+    "upgradeVersion": 210000000499,
     "framework": "touch21",
     "topInstanceFileMap": {
         "513759c1-12e2-4a8a-b5b8-6051975b79d7": {

@@ -1,5 +1,5 @@
 {
-    "type": "controller",
+    "type": "Ext.app.Controller",
     "reference": {
         "name": "items",
         "type": "array"
@@ -11,7 +11,6 @@
     "configAlternates": {
         "profile": "object"
     },
-    "id": "ExtBox1-ext-gen3975",
     "designerId": "518b9576-2d9d-42b6-9e14-f9107124020d",
     "customConfigs": [
         {

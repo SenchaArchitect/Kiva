@@ -1,5 +1,5 @@
 {
-    "type": "container",
+    "type": "Ext.Container",
     "reference": {
         "name": "items",
         "type": "array"
@@ -9,26 +9,25 @@
         "designer|userClassName": "LoanFilter",
         "designer|userAlias": "loanfilter"
     },
-    "id": "ExtBox1-ext-gen15006",
     "designerId": "db753b0c-c712-4149-bb62-862860e75414",
     "cn": [
         {
-            "type": "toolbar",
+            "type": "Ext.Toolbar",
             "reference": {
                 "name": "items",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyToolbar",
                 "docked": "top",
                 "ui": "green",
+                "designer|userClassName": "MyToolbar",
                 "title": "Kiva"
             },
             "designerId": "b7eaa3a5-806e-4b60-a94a-14cffbd3c818",
             "cn": [
                 {
-                    "type": "spacer",
+                    "type": "Ext.Spacer",
                     "reference": {
                         "name": "items",
                         "type": "array"
@@ -40,7 +39,7 @@
                     "designerId": "90865134-ba28-4e5c-96cf-a8d70a493225"
                 },
                 {
-                    "type": "button",
+                    "type": "Ext.Button",
                     "reference": {
                         "name": "items",
                         "type": "array"
@@ -57,21 +56,21 @@
             ]
         },
         {
-            "type": "toolbar",
+            "type": "Ext.Toolbar",
             "reference": {
                 "name": "items",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyToolbar1",
                 "docked": "top",
-                "ui": "gray"
+                "ui": "gray",
+                "designer|userClassName": "MyToolbar1"
             },
             "designerId": "526d5350-1981-48a3-b863-84760390e91b",
             "cn": [
                 {
-                    "type": "selectfield",
+                    "type": "Ext.field.Select",
                     "reference": {
                         "name": "items",
                         "type": "array"
@@ -86,7 +85,7 @@
                     "designerId": "5a44354f-811e-4da2-87c4-85f02cad0136"
                 },
                 {
-                    "type": "selectfield",
+                    "type": "Ext.field.Select",
                     "reference": {
                         "name": "items",
                         "type": "array"
@@ -101,7 +100,7 @@
                     "designerId": "f5b31970-b6e1-46e3-8e77-106cd5bd8736"
                 },
                 {
-                    "type": "selectfield",
+                    "type": "Ext.field.Select",
                     "reference": {
                         "name": "items",
                         "type": "array"
@@ -116,7 +115,7 @@
                     "designerId": "7d664d45-0768-4ea5-8d3a-495bd20a2b2b"
                 },
                 {
-                    "type": "spacer",
+                    "type": "Ext.Spacer",
                     "reference": {
                         "name": "items",
                         "type": "array"
@@ -128,7 +127,7 @@
                     "designerId": "3156c3f4-991b-4ed6-8280-297cafcdcd38"
                 },
                 {
-                    "type": "searchfield",
+                    "type": "Ext.field.Search",
                     "reference": {
                         "name": "items",
                         "type": "array"

@@ -1,5 +1,5 @@
 {
-    "type": "dataitem",
+    "type": "Ext.dataview.component.DataItem",
     "reference": {
         "name": "items",
         "type": "array"
@@ -7,65 +7,64 @@
     "codeClass": null,
     "userConfig": {
         "container|align": null,
-        "designer|userClassName": "LoansListItem",
-        "designer|userAlias": "loanslistitem",
         "cls": [
             "x-list-item"
         ],
         "padding": null,
+        "designer|userClassName": "LoansListItem",
+        "designer|userAlias": "loanslistitem",
         "layout": "vbox"
     },
-    "id": "ExtBox1-ext-gen25936",
     "designerId": "7e648599-3519-4afa-8f50-1bcedb811d75",
     "cn": [
         {
-            "type": "component",
+            "type": "Ext.Component",
             "reference": {
                 "name": "items",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyComponent1",
-                "designer|displayName": "name",
                 "cls": [
                     "name"
                 ],
-                "itemId": "name"
+                "itemId": "name",
+                "designer|userClassName": "MyComponent1",
+                "designer|displayName": "name"
             },
             "designerId": "13924b6f-8151-485c-b698-cafe04034a4e"
         },
         {
-            "type": "component",
+            "type": "Ext.Component",
             "reference": {
                 "name": "items",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyComponent2",
-                "designer|displayName": "use",
                 "cls": [
                     "use"
                 ],
-                "itemId": "use"
+                "itemId": "use",
+                "designer|userClassName": "MyComponent2",
+                "designer|displayName": "use"
             },
             "designerId": "c7d5cb92-3e42-414b-8b63-31ca3559bbfc"
         },
         {
-            "type": "image",
+            "type": "Ext.Img",
             "reference": {
                 "name": "items",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyImage",
-                "designer|displayName": "avatar",
                 "docked": "left",
                 "height": null,
                 "itemId": "avatar",
-                "width": null
+                "width": null,
+                "designer|userClassName": "MyImage",
+                "designer|displayName": "avatar"
             },
             "designerId": "b71c7c5f-b05d-4133-81e0-c743daf4d3ac"
         },
@@ -77,12 +76,12 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|displayName": "completion",
                 "docked": "right",
-                "itemId": "completion"
+                "itemId": "completion",
+                "designer|displayName": "completion"
             },
             "designerId": "16b6cdff-1677-4bdb-a958-700c7318e076",
-            "masterInstanceId": "ExtBox1-ext-gen8241"
+            "masterInstanceId": "d7ba4374-86ed-457e-949c-4b15f5195d5a"
         },
         {
             "type": "fixedfunction",

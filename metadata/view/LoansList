@@ -1,5 +1,5 @@
 {
-    "type": "dataview",
+    "type": "Ext.dataview.DataView",
     "reference": {
         "name": "items",
         "type": "array"
@@ -9,12 +9,11 @@
         "refreshed": [
             "[\"[\\\"[\\\\\\\"false\\\\\\\"]\\\"]\"]"
         ],
+        "ui": "loans",
         "designer|userClassName": "LoansList",
         "designer|userAlias": "loanslist",
-        "ui": "loans",
-        "defaultType": "loanslistitem",
-        "layout": null,
         "deselectOnContainerClick": false,
+        "defaultType": "loanslistitem",
         "store": "Loans",
         "useComponents": true
     },
@@ -22,7 +21,6 @@
         "dataMap": "object",
         "refreshed": "object"
     },
-    "id": "ExtBox1-ext-gen22945",
     "designerId": "40c12b1f-2659-4c24-bad6-6672d4d0b90b",
     "customConfigs": [
         {
