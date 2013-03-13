@@ -1,18 +1,18 @@
 {
-    "type": "panel",
+    "type": "Ext.Panel",
     "reference": {
         "name": "items",
         "type": "array"
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "Detail",
-        "designer|userAlias": "detail",
         "bottom": 0,
         "right": 0,
         "top": 0,
         "ui": "detail",
         "width": 400,
+        "designer|userClassName": "Detail",
+        "designer|userAlias": "detail",
         "hideOnMaskTap": true,
         "layout": "vbox",
         "modal": true
@@ -20,7 +20,6 @@
     "configAlternates": {
         "loan": "object"
     },
-    "id": "ExtBox1-ext-gen9316",
     "designerId": "502e7c24-8ce7-4387-8bd0-7c7b3aeeeedc",
     "cn": [
         {
@@ -41,7 +40,7 @@
             "designerId": "276aca71-4647-4603-a4a1-27c8077f90ce"
         },
         {
-            "type": "carousel",
+            "type": "Ext.carousel.Carousel",
             "reference": {
                 "name": "items",
                 "type": "array"
@@ -61,7 +60,7 @@
                     },
                     "codeClass": null,
                     "designerId": "7454f94d-49f7-4068-a42a-fbd0287f90e2",
-                    "masterInstanceId": "ExtBox1-ext-gen3674"
+                    "masterInstanceId": "513759c1-12e2-4a8a-b5b8-6051975b79d7"
                 },
                 {
                     "type": "linkedinstance",
@@ -71,7 +70,7 @@
                     },
                     "codeClass": null,
                     "designerId": "7c2895ae-7360-4da7-aa05-1ea0a1efc8a8",
-                    "masterInstanceId": "ExtBox1-ext-gen8104"
+                    "masterInstanceId": "9c8b4b3a-dd9d-4e9a-8c39-de58f9e6791f"
                 },
                 {
                     "type": "linkedinstance",
@@ -81,20 +80,20 @@
                     },
                     "codeClass": null,
                     "designerId": "ca008aff-24e4-4114-abb1-c2ab76661879",
-                    "masterInstanceId": "ExtBox1-ext-gen5512"
+                    "masterInstanceId": "db1ffbfd-ecce-49c6-9fb3-cfcf75cf54e3"
                 }
             ]
         },
         {
-            "type": "button",
+            "type": "Ext.Button",
             "reference": {
                 "name": "items",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyButton",
                 "id": "lendButton",
+                "designer|userClassName": "MyButton",
                 "text": "Lend $25"
             },
             "designerId": "0d83ac5c-272a-496b-8ab0-fd49cb937cbd"

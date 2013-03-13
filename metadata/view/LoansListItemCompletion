@@ -1,5 +1,5 @@
 {
-    "type": "component",
+    "type": "Ext.Component",
     "reference": {
         "name": "items",
         "type": "array"
@@ -7,14 +7,13 @@
     "codeClass": null,
     "userConfig": {
         "percentFunded": "0",
-        "designer|userClassName": "LoansListItemCompletion",
-        "designer|userAlias": "loanslistitemcompletion",
         "cls": [
             "completion"
         ],
-        "width": 100
+        "width": 100,
+        "designer|userClassName": "LoansListItemCompletion",
+        "designer|userAlias": "loanslistitemcompletion"
     },
-    "id": "ExtBox1-ext-gen8241",
     "designerId": "d7ba4374-86ed-457e-949c-4b15f5195d5a",
     "customConfigs": [
         {

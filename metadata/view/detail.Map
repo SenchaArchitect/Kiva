@@ -1,14 +1,14 @@
 {
-    "type": "map",
+    "type": "Ext.Map",
     "reference": {
         "name": "items",
         "type": "array"
     },
     "codeClass": null,
     "userConfig": {
+        "height": null,
         "designer|userClassName": "detail.Map",
         "designer|userAlias": "detailMap",
-        "height": null,
         "mapOptions": [
             "{",
             "            //center: this.mapPosition,",
@@ -18,6 +18,5 @@
             "        }"
         ]
     },
-    "id": "ExtBox1-ext-gen5512",
     "designerId": "db1ffbfd-ecce-49c6-9fb3-cfcf75cf54e3"
 }

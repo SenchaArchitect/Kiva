@@ -1,20 +1,19 @@
 {
-    "type": "container",
+    "type": "Ext.Container",
     "reference": {
         "name": "items",
         "type": "array"
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "detail.Schedule",
-        "designer|userAlias": "detailSchedule",
         "cls": [
             "detail-card"
         ],
         "styleHtmlContent": true,
+        "designer|userClassName": "detail.Schedule",
+        "designer|userAlias": "detailSchedule",
         "scrollable": "vertical"
     },
-    "id": "ExtBox1-ext-gen8104",
     "designerId": "9c8b4b3a-dd9d-4e9a-8c39-de58f9e6791f",
     "cn": [
         {

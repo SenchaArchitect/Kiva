@@ -1,24 +1,23 @@
 {
-    "type": "container",
+    "type": "Ext.Container",
     "reference": {
         "name": "items",
         "type": "array"
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "detail.Information",
-        "designer|userAlias": "detailInformation",
         "cls": [
             "detail-card"
         ],
         "styleHtmlContent": true,
+        "designer|userClassName": "detail.Information",
+        "designer|userAlias": "detailInformation",
         "scrollable": "vertical"
     },
-    "id": "ExtBox1-ext-gen3674",
     "designerId": "513759c1-12e2-4a8a-b5b8-6051975b79d7",
     "cn": [
         {
-            "type": "template",
+            "type": "Ext.XTemplate",
             "reference": {
                 "name": "tpl",
                 "type": "object"

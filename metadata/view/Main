@@ -1,5 +1,5 @@
 {
-    "type": "container",
+    "type": "Ext.Container",
     "reference": {
         "name": "items",
         "type": "array"
@@ -11,7 +11,6 @@
         "designer|initialView": true,
         "layout": "fit"
     },
-    "id": "ExtBox1-ext-gen34349",
     "designerId": "2f116102-9fd6-4bfc-8755-92a2de790577",
     "cn": [
         {
@@ -22,11 +21,11 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|displayName": "loanfilter",
-                "docked": "top"
+                "docked": "top",
+                "designer|displayName": "loanfilter"
             },
             "designerId": "84d9a8b9-dbcc-4655-b6db-f76d1a21b11b",
-            "masterInstanceId": "ExtBox1-ext-gen15006"
+            "masterInstanceId": "db753b0c-c712-4149-bb62-862860e75414"
         },
         {
             "type": "linkedinstance",
@@ -36,11 +35,10 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|displayName": "loanlist",
-                "layout": null
+                "designer|displayName": "loanlist"
             },
             "designerId": "25891ede-502a-454d-b303-09da01d87b47",
-            "masterInstanceId": "ExtBox1-ext-gen22945"
+            "masterInstanceId": "40c12b1f-2659-4c24-bad6-6672d4d0b90b"
         }
     ]
 }
