@@ -1,0 +1,70 @@
+{
+    "name": "Kiva",
+    "settings": {
+        "cmd": {
+            "license": "commercial",
+            "cmdVersion": "4.0.1.45",
+            "frameworkVersion": "2.1.1.594"
+        },
+        "urlPrefix": "http://localhost/sandbox/Kiva/",
+        "spacesToIndent": 4,
+        "exportPath": "",
+        "sdkPath": "",
+        "lineEnding": "CRLF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "codeGenFormat": "Class",
+        "senchaIoKey": "",
+        "senchaIoPath": "http://extjs.cachefly.net/designer/IO/",
+        "instantiateStore": true,
+        "saveOnDeploy": false,
+        "appName": "MyApp",
+        "canvasControls": {
+            "viewportSize": {
+                "name": "iPhone",
+                "builtIn": true,
+                "height": 480,
+                "width": 320
+            },
+            "viewportOrientation": "portrait"
+        },
+        "buildShouldOverwriteIndex": true,
+        "generateArchitectVersion": true
+    },
+    "xdsVersion": "3.0.0",
+    "xdsBuild": 0,
+    "schemaVersion": 1,
+    "upgradeVersion": 300000000003,
+    "framework": "touch22",
+    "viewOrderMap": {
+        "view": [
+            "513759c1-12e2-4a8a-b5b8-6051975b79d7",
+            "9c8b4b3a-dd9d-4e9a-8c39-de58f9e6791f",
+            "db1ffbfd-ecce-49c6-9fb3-cfcf75cf54e3",
+            "502e7c24-8ce7-4387-8bd0-7c7b3aeeeedc",
+            "db753b0c-c712-4149-bb62-862860e75414",
+            "40c12b1f-2659-4c24-bad6-6672d4d0b90b",
+            "7e648599-3519-4afa-8f50-1bcedb811d75",
+            "2f116102-9fd6-4bfc-8755-92a2de790577",
+            "d7ba4374-86ed-457e-949c-4b15f5195d5a"
+        ],
+        "store": [
+            "e1cb338e-dac7-4fbc-ab0d-2e7c0a7a112e"
+        ],
+        "controller": [
+            "518b9576-2d9d-42b6-9e14-f9107124020d"
+        ],
+        "model": [
+            "4ee53f7d-5b84-48c9-b03d-d95a3dbae233"
+        ],
+        "resource": [
+            "f8f2ab7b-a2d2-4700-9cfe-7e85540dfc9e",
+            "ed24e683-53fa-4b1e-9331-c8009d9ab838",
+            "2238470a-f660-41e8-a4ce-03c33d19bcd0",
+            "14a64ebf-1e18-43dc-98d3-03354d2eb9a6"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

@@ -1,0 +1,67 @@
+{
+   "name": "Kiva",
+   "indexHtmlPath": "index.html",
+   "url": null,
+   "js": [
+      {
+         "path": "touch/sencha-touch.js",
+         "x-bootstrap": true
+      },
+      {
+         "path": "bootstrap.js",
+         "x-bootstrap": true
+      },
+      {
+         "path": "app.js",
+         "bundle": true,
+         "update": "delta"
+      },
+      {
+         "path": "lib/KivaProxy.js"
+      }
+   ],
+   "css": [
+      {
+         "path": "resources/css/app.css",
+         "update": "delta"
+      }
+   ],
+   "appCache": {
+      "cache": [
+         "index.html"
+      ],
+      "network": [
+         "*"
+      ],
+      "fallback": []
+   },
+   "resources": [
+      "resources/images",
+      "resources/icons",
+      "resources/startup"
+   ],
+   "ignore": [
+      ".svn$"
+   ],
+   "archivePath": "archive",
+   "requires": [],
+   "id": "be281a34-7ccb-406a-8204-96f4f1cc6cb7",
+   "classpath": "${app.dir}/app,${app.dir}/lib/",
+   "_architect": {
+      "_comment": "Please don't edit. This is Architect data.",
+      "name": "Kiva",
+      "css": [
+         {
+            "path": "resources/css/app.css"
+         }
+      ],
+      "js": [
+         {
+            "path": "lib/KivaProxy.js"
+         }
+      ],
+      "resources": [],
+      "classpath": "${app.dir}/app,${app.dir}/lib/",
+      "requires": []
+   }
+}

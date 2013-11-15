@@ -1,0 +1,208 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "loanfilter",
+        "designer|userClassName": "LoanFilter"
+    },
+    "designerId": "db753b0c-c712-4149-bb62-862860e75414",
+    "cn": [
+        {
+            "type": "Ext.Toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "top",
+                "title": "Kiva",
+                "ui": "green"
+            },
+            "designerId": "b7eaa3a5-806e-4b60-a94a-14cffbd3c818",
+            "cn": [
+                {
+                    "type": "Ext.Spacer",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "designerId": "90865134-ba28-4e5c-96cf-a8d70a493225"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "iconCls": "refresh",
+                        "iconMask": true,
+                        "text": null
+                    },
+                    "designerId": "cfcf8ad4-c400-4567-9702-9554fa7468a7"
+                }
+            ]
+        },
+        {
+            "type": "Ext.Toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "top",
+                "ui": "gray"
+            },
+            "designerId": "526d5350-1981-48a3-b863-84760390e91b",
+            "cn": [
+                {
+                    "type": "Ext.field.Select",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": null,
+                        "name": "gender",
+                        "options": [
+                            "[",
+                            "{text:'Both', value:'both'}, ",
+                            "{text:'Male',",
+                            "value:'male'},",
+                            "{text:'Female',",
+                            "value:'female'}",
+                            "]",
+                            ""
+                        ]
+                    },
+                    "designerId": "5a44354f-811e-4da2-87c4-85f02cad0136"
+                },
+                {
+                    "type": "Ext.field.Select",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": null,
+                        "name": "sector",
+                        "options": [
+                            "[",
+                            "                            {text: 'All',            value: ''},",
+                            "                            {text: 'Agriculture',    value: 'agriculture'},",
+                            "                            {text: 'Transportation', value: 'transportation'},",
+                            "                            {text: 'Services',       value: 'services'},",
+                            "                            {text: 'Clothing',       value: 'clothing'},",
+                            "                            {text: 'Health',         value: 'health'},",
+                            "                            {text: 'Retail',         value: 'retail'},",
+                            "                            {text: 'Manufacturing',  value: 'manufacturing'},",
+                            "                            {text: 'Arts',           value: 'arts'},",
+                            "                            {text: 'Housing',        value: 'housing'},",
+                            "                            {text: 'Food',           value: 'food'},",
+                            "                            {text: 'Wholesale',      value: 'wholesale'},",
+                            "                            {text: 'Construction',   value: 'construction'},",
+                            "                            {text: 'Education',      value: 'education'},",
+                            "                            {text: 'Personal Use',   value: 'personal'},",
+                            "                            {text: 'Entertainment',  value: 'entertainment'},",
+                            "                            {text: 'Green',          value: 'green'}",
+                            "                        ]"
+                        ]
+                    },
+                    "designerId": "f5b31970-b6e1-46e3-8e77-106cd5bd8736"
+                },
+                {
+                    "type": "Ext.field.Select",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": null,
+                        "name": "sort_by",
+                        "options": [
+                            " [",
+                            "                            {text: 'Newest',           value: 'newest'},",
+                            "                            {text: 'Oldest',           value: 'oldest'},",
+                            "                            {text: 'Expiring',         value: 'expiration'},",
+                            "                            {text: 'Amount Remaining', value: 'amount_remaining'},",
+                            "                            {text: 'Popularity',       value: 'popularity'},",
+                            "                            {text: 'Loan Amount',      value: 'loan_amount'}",
+                            "                        ]"
+                        ]
+                    },
+                    "designerId": "7d664d45-0768-4ea5-8d3a-495bd20a2b2b"
+                },
+                {
+                    "type": "Ext.Spacer",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "designerId": "3156c3f4-991b-4ed6-8280-297cafcdcd38"
+                },
+                {
+                    "type": "Ext.field.Search",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "label": null
+                    },
+                    "designerId": "8f646e51-c01e-4ecc-83a3-33455d035a4a"
+                }
+            ]
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "comp, value"
+                ],
+                "fn": "onFieldChange",
+                "implHandler": [
+                    "this.fireAction('filter', this.getValues(), this);"
+                ]
+            },
+            "designerId": "c779cab0-3282-40d7-bef9-44051a7218e1"
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onContainerInitialize",
+                "implHandler": [
+                    "if (Ext.os.deviceType === 'Phone'){",
+                    "    this.setItems([",
+                    "    { xtype: 'searchfield', flex: 1 }",
+                    "    ]);",
+                    "}"
+                ],
+                "name": "initialize"
+            },
+            "designerId": "9ac95a3d-cd90-4744-ab5c-10a149238d66"
+        }
+    ]
+}

@@ -6,9 +6,11 @@
     },
     "codeClass": null,
     "userConfig": {
-        "basePath": null,
+        "basePath": "touch/",
         "debug": true,
-        "includeCss": false
+        "designer|userClassName": "Library",
+        "includeCss": false,
+        "theme": null
     },
     "designerId": "f8f2ab7b-a2d2-4700-9cfe-7e85540dfc9e"
 }
